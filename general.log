@@ -1,0 +1,2 @@
+2023-10-26 12:25:32,356 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_simpleplayer" ALTER COLUMN "id" TYPE int
+2023-10-26 18:25:46,557 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_classification" ALTER COLUMN "coef" TYPE string

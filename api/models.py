@@ -12,6 +12,7 @@ class UserProfile(models.Model):
         (MEMBERSHIP_PREMIUM, 'Premium'),
         (MEMBERSHIP_PREMIUMPLUS, 'Premium+'),
     ]
+    id = models.IntegerField(primary_key=True)
     email = models.EmailField(max_length=100, unique=True)
     coins = models.IntegerField(default=1000) 
     rating = models.IntegerField(default=1200)  
@@ -86,21 +87,38 @@ class Teams(models.Model):
 
 
 class Classification(models.Model):
-    year = models.IntegerField()
-    round = models.IntegerField()
+    id = models.IntegerField(primary_key=True)
+    group = models.IntegerField()
+    group_name = models.CharField(max_length=255,null=True,blank=True)
+    conference = models.IntegerField()
     team = models.CharField(max_length=200)
     points = models.IntegerField()
     wins = models.IntegerField()
     draws = models.IntegerField()
     losses = models.IntegerField()
-    goals = models.IntegerField()
-    goalsc = models.IntegerField()
-    average = models.IntegerField()
-    shield = models.URLField()
-    class_mark = models.CharField(max_length=100,default='nothing')
+    shield = models.URLField(null=True,blank=True)
+    cflag = models.URLField(null=True,blank=True)
+    basealias = models.CharField(max_length=255)
+    gf = models.IntegerField(null=True,blank=True)
+    ga = models.IntegerField(null=True,blank=True)
+    avg = models.IntegerField()
+    matchs_coef = models.CharField(max_length=255,null=True,blank=True)
+    points_coef = models.CharField(max_length=255,null=True,blank=True)
+    coef = models.CharField(max_length=255,null=True,blank=True)
+    coefficients = models.CharField(max_length=255,null=True,blank=True)
+    mark = models.CharField(max_length=255,null=True,blank=True)
+    class_mark = models.CharField(max_length=255,null=True,blank=True)
+    round = models.IntegerField()
+    pos = models.IntegerField()
+    countrycode = models.CharField(max_length=4)
+    abbr = models.CharField(max_length=10)
+    form = models.CharField(max_length=15)
+    direction = models.CharField(max_length=200,blank=True)
 
     def __str__(self):
-        return self.year
+        return 'Casificación'
+    class Meta:
+        ordering = ['pos']
 
     
 class Player(models.Model):
@@ -189,7 +207,7 @@ class Player(models.Model):
         return self.name
 
 class SimplePlayer(models.Model):
-    id = models.CharField(max_length=10, primary_key=True)
+    id = models.IntegerField(primary_key=True)
     team_id = models.IntegerField()
     nick = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
@@ -198,11 +216,11 @@ class SimplePlayer(models.Model):
     birthdate = models.DateField()
     height = models.IntegerField()
     weight = models.IntegerField()
-    foot = models.CharField(max_length=1)
-    side = models.CharField(max_length=1)
-    role = models.CharField(max_length=1)
+    foot = models.IntegerField()
+    side = models.IntegerField()
+    role = models.IntegerField()
     year = models.IntegerField()
-    squadNumber = models.CharField(max_length=10)
+    squadNumber = models.IntegerField(blank=True)
     num = models.CharField(max_length=10,blank=True)
     pos = models.CharField(max_length=10,blank=True)
     idplayer = models.CharField(max_length=10,blank=True)
