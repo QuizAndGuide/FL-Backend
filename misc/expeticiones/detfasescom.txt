@@ -1,0 +1,48 @@
+GET
+Detalle fases competición
+https://apiclient.besoccerapps.com/scripts/api/api.php?key={{APIKEY}}&tz=Europe/Madrid&format=json&req=competition_info&competitions=1
+Muestra informacion sobre las competiciones indicadas por parametro
+
+Parámetros obligatorios:
+
+key
+req
+competitions
+Parámetros opcionales:
+
+tz
+format
+year
+Caché de la petición:
+
+300 segundos
+PARAMS
+key
+{{APIKEY}}
+
+Clave única que permite a los usuarios conectarse a la API. Ésta se le proporciona al cliente en el momento en que él/ella crea una cuenta en la API.
+
+tz
+Europe/Madrid
+
+Zona horaria
+
+format
+json
+
+Los formatos disponibles son los siguientes: json, xml, text
+
+req
+competition_info
+
+Nombre de la solicitud que se desdea consultar
+
+competitions
+1
+
+Identificador de la competición de la que se quiere consultar la información
+
+year
+2023
+
+Temporada en la que se buscan las competiciones. Si no se indica, consulta en la temporada actual.

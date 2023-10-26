@@ -1,0 +1,598 @@
+{
+    "countries": [
+      {
+        "id": "182",
+        "name": "Albania",
+        "country": "al",
+        "continent": "eu",
+        "competitions": "7",
+        "alias": "albania",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/al.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "8",
+        "name": "Germany",
+        "country": "de",
+        "continent": "eu",
+        "competitions": "22",
+        "alias": "alemania",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/de.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "417",
+        "name": "Andorra",
+        "country": "ad",
+        "continent": "eu",
+        "competitions": "5",
+        "alias": "andorra",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ad.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "2761",
+        "name": "Argentina",
+        "country": "ar",
+        "continent": "eu",
+        "competitions": "1",
+        "alias": "argentina",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ar.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "184",
+        "name": "Armenia",
+        "country": "am",
+        "continent": "eu",
+        "competitions": "5",
+        "alias": "armenia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/am.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "11",
+        "name": "Austria",
+        "country": "at",
+        "continent": "eu",
+        "competitions": "11",
+        "alias": "austria",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/at.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "396",
+        "name": "Azerbaijan",
+        "country": "az",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "azerbaiyan",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/az.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "12",
+        "name": "Belgium",
+        "country": "be",
+        "continent": "eu",
+        "competitions": "17",
+        "alias": "belgica",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/be.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "186",
+        "name": "Belarus",
+        "country": "by",
+        "continent": "eu",
+        "competitions": "9",
+        "alias": "belarus",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/by.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "185",
+        "name": "Bosnia and Herzegovina",
+        "country": "ba",
+        "continent": "eu",
+        "competitions": "8",
+        "alias": "bosnia-herzegovina",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ba.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "2588",
+        "name": "Brazil",
+        "country": "br",
+        "continent": "eu",
+        "competitions": "4",
+        "alias": "brasil",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/br.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "205",
+        "name": "Bulgaria",
+        "country": "bg",
+        "continent": "eu",
+        "competitions": "8",
+        "alias": "bulgaria",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/bg.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "187",
+        "name": "Cyprus",
+        "country": "cy",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "chipre",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/cy.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "107",
+        "name": "European competition",
+        "country": "ue",
+        "continent": "eu",
+        "competitions": "45",
+        "alias": "competiciones_europeas",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ue.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "2654",
+        "name": "North American competitions",
+        "country": "n1",
+        "continent": "eu",
+        "competitions": "3",
+        "alias": "competiciones_norteamericanas",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/n1.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "2733",
+        "name": "South American competitions",
+        "country": "n2",
+        "continent": "eu",
+        "competitions": "1",
+        "alias": "competiciones_sudamericanas",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/n2.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "100",
+        "name": "Croatia",
+        "country": "hr",
+        "continent": "eu",
+        "competitions": "11",
+        "alias": "croacia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/hr.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "2737",
+        "name": "Cuba",
+        "country": "cu",
+        "continent": "eu",
+        "competitions": "1",
+        "alias": "cuba",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/cu.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "13",
+        "name": "Denmark",
+        "country": "dk",
+        "continent": "eu",
+        "competitions": "15",
+        "alias": "dinamarca",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/dk.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "14",
+        "name": "Scotland",
+        "country": "ss",
+        "continent": "eu",
+        "competitions": "15",
+        "alias": "escocia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ss.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "35",
+        "name": "Slovakia",
+        "country": "sk",
+        "continent": "eu",
+        "competitions": "8",
+        "alias": "eslovaquia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/sk.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "15",
+        "name": "Slovenia",
+        "country": "si",
+        "continent": "eu",
+        "competitions": "7",
+        "alias": "eslovenia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/si.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "1",
+        "name": "Spain",
+        "country": "es",
+        "continent": "eu",
+        "competitions": "923",
+        "alias": "espana",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/es.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "2651",
+        "name": "United States",
+        "country": "us",
+        "continent": "eu",
+        "competitions": "2",
+        "alias": "estados-unidos",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/us.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "143",
+        "name": "Estonia",
+        "country": "ee",
+        "continent": "eu",
+        "competitions": "15",
+        "alias": "estonia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ee.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "31",
+        "name": "Finland",
+        "country": "fi",
+        "continent": "eu",
+        "competitions": "9",
+        "alias": "finlandia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/fi.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "16",
+        "name": "France",
+        "country": "fr",
+        "continent": "eu",
+        "competitions": "15",
+        "alias": "francia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/fr.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "39",
+        "name": "Wales",
+        "country": "wa",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "gales",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/wa.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "301",
+        "name": "Georgia",
+        "country": "ge",
+        "continent": "eu",
+        "competitions": "12",
+        "alias": "georgia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ge.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "1459",
+        "name": "Gibraltar",
+        "country": "gi",
+        "continent": "eu",
+        "competitions": "5",
+        "alias": "gibraltar",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/gi.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "17",
+        "name": "Greece",
+        "country": "gr",
+        "continent": "eu",
+        "competitions": "9",
+        "alias": "grecia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/gr.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "95",
+        "name": "Hungary",
+        "country": "hu",
+        "continent": "eu",
+        "competitions": "20",
+        "alias": "hungria",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/hu.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "10",
+        "name": "England",
+        "country": "gb",
+        "continent": "eu",
+        "competitions": "36",
+        "alias": "reino-unido",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/gb.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "119",
+        "name": "International",
+        "country": "wo",
+        "continent": "eu",
+        "competitions": "8",
+        "alias": "internacional",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/wo.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "346",
+        "name": "Ireland",
+        "country": "ie",
+        "continent": "eu",
+        "competitions": "10",
+        "alias": "irlanda",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ie.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "32",
+        "name": "Northern Ireland",
+        "country": "i1",
+        "continent": "eu",
+        "competitions": "8",
+        "alias": "irlanda_del_norte",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/i1.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "306",
+        "name": "Iceland",
+        "country": "is",
+        "continent": "eu",
+        "competitions": "10",
+        "alias": "islandia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/is.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "419",
+        "name": "Faroe Islands",
+        "country": "fo",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "islas-feroe",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/fo.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "97",
+        "name": "Israel",
+        "country": "il",
+        "continent": "eu",
+        "competitions": "11",
+        "alias": "israel",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/il.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "7",
+        "name": "Italy",
+        "country": "it",
+        "continent": "eu",
+        "competitions": "33",
+        "alias": "italia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/it.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "399",
+        "name": "Kazakhstan",
+        "country": "kz",
+        "continent": "eu",
+        "competitions": "5",
+        "alias": "kazakstan",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/kz.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "1642",
+        "name": "Kosovo",
+        "country": "xk",
+        "continent": "eu",
+        "competitions": "4",
+        "alias": "kosovo",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/xk.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "371",
+        "name": "Latvia",
+        "country": "lv",
+        "continent": "eu",
+        "competitions": "7",
+        "alias": "letonia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/lv.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "1647",
+        "name": "Liechtenstein",
+        "country": "li",
+        "continent": "eu",
+        "competitions": "1",
+        "alias": "liechtenstein",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/li.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "98",
+        "name": "Lithuania",
+        "country": "lt",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "lituania",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/lt.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "348",
+        "name": "Luxembourg",
+        "country": "lu",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "luxemburgo",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/lu.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "302",
+        "name": "Macedonia",
+        "country": "mk",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "macedonia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/mk.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "421",
+        "name": "Malta",
+        "country": "mt",
+        "continent": "eu",
+        "competitions": "6",
+        "alias": "malta",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/mt.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "375",
+        "name": "Moldova",
+        "country": "md",
+        "continent": "eu",
+        "competitions": "8",
+        "alias": "moldavia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/md.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "152",
+        "name": "Montenegro",
+        "country": "me",
+        "continent": "eu",
+        "competitions": "4",
+        "alias": "montenegro",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/me.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "18",
+        "name": "Norway",
+        "country": "no",
+        "continent": "eu",
+        "competitions": "15",
+        "alias": "noruega",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/no.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "9",
+        "name": "Netherlands",
+        "country": "nl",
+        "continent": "eu",
+        "competitions": "27",
+        "alias": "paises-bajos",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/nl.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "128",
+        "name": "Poland",
+        "country": "pl",
+        "continent": "eu",
+        "competitions": "11",
+        "alias": "polonia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/pl.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "19",
+        "name": "Portugal",
+        "country": "pt",
+        "continent": "eu",
+        "competitions": "64",
+        "alias": "portugal",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/pt.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "1738",
+        "name": "Czech Republic",
+        "country": "cz",
+        "continent": "eu",
+        "competitions": "11",
+        "alias": "republica-checa",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/cz.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "20",
+        "name": "Romania",
+        "country": "ro",
+        "continent": "eu",
+        "competitions": "9",
+        "alias": "rumania",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ro.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "27",
+        "name": "Russia",
+        "country": "ru",
+        "continent": "eu",
+        "competitions": "12",
+        "alias": "rusia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ru.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "305",
+        "name": "San Marino",
+        "country": "sm",
+        "continent": "eu",
+        "competitions": "3",
+        "alias": "san-marino",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/sm.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "386",
+        "name": "Serbia",
+        "country": "rs",
+        "continent": "eu",
+        "competitions": "7",
+        "alias": "serbia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/rs.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "1709",
+        "name": "Serbia and Montenegro",
+        "country": "cs",
+        "continent": "eu",
+        "competitions": "3",
+        "alias": "serbia-and-montenegro",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/cs.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "22",
+        "name": "Sweden",
+        "country": "se",
+        "continent": "eu",
+        "competitions": "14",
+        "alias": "suecia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/se.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "36",
+        "name": "Switzerland",
+        "country": "ch",
+        "continent": "eu",
+        "competitions": "14",
+        "alias": "suiza",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ch.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "37",
+        "name": "Turkey",
+        "country": "tr",
+        "continent": "eu",
+        "competitions": "16",
+        "alias": "turquia",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/tr.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "175",
+        "name": "Ukraine",
+        "country": "ua",
+        "continent": "eu",
+        "competitions": "9",
+        "alias": "ucrania",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/ua.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "2739",
+        "name": "Uruguay",
+        "country": "uy",
+        "continent": "eu",
+        "competitions": "1",
+        "alias": "uruguay",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/uy.png?size=60x&lossy=1&v=28"
+      },
+      {
+        "id": "144",
+        "name": "Uzbekistan",
+        "country": "uz",
+        "continent": "eu",
+        "competitions": "3",
+        "alias": "uzbekistan",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/uz.png?size=60x&lossy=1&v=28"
+      }
+    ]
+  }

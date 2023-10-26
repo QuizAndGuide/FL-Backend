@@ -1,0 +1,73 @@
+GET
+Competiciones top
+https://apiclient.besoccerapps.com/scripts/api/api.php?key={{APIKEY}}&tz=Europe/Madrid&format=json&req=competitions
+Devuelve todas las competiciones de cualquier pais o continente.
+
+Parámetros obligatorios:
+
+key
+req
+Parámetros opcionales:
+
+tz
+format
+country
+q
+lang
+filter
+init
+limit
+Caché de la petición:
+
+600 segundos
+PARAMS
+key
+{{APIKEY}}
+
+Clave única que permite a los usuarios conectarse a la API. Ésta se le proporciona al cliente en el momento en que él/ella crea una cuenta en la API.
+
+tz
+Europe/Madrid
+
+Zona horaria
+
+format
+json
+
+Los formatos disponibles son los siguientes: json, xml, text
+
+req
+competitions
+
+Nombre de la solicitud que se desdea consultar
+
+country
+es
+
+Filtra por país
+
+q
+primera
+
+Busca competición por nombre
+
+lang
+es
+
+Lenguaje de salida
+
+filter
+my_leagues
+
+Filtra por la ligas contratadas
+
+init
+0
+
+Inicio de la paginación
+
+limit
+2
+
+Total de elementos
+

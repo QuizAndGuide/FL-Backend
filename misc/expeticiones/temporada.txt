@@ -1,0 +1,54 @@
+GET
+Temporadas
+http://apiclient.besoccerapps.com/scripts/api/api.php?key={{APIKEY}}&tz=Europe/Madrid&format=json&req=seasons&id=1
+Devuele la informacion de todas las temporadas de esa competicion que esten en base de datos
+
+Parámetros obligatorios:
+
+key
+req
+id
+Parámetros opcionales:
+
+tz
+format
+group
+year
+Caché de la petición:
+
+3600 segundos
+PARAMS
+key
+{{APIKEY}}
+
+Clave única que permite a los usuarios conectarse a la API. Ésta se le proporciona al cliente en el momento en que él/ella crea una cuenta en la API.
+
+tz
+Europe/Madrid
+
+Zona horaria
+
+format
+json
+
+Los formatos disponibles son los siguientes: json, xml, text
+
+req
+seasons
+
+Nombre de la solicitud que se desdea consultar
+
+id
+1
+
+Identificador de la competición de la que se quiere consultar la información
+
+group
+1
+
+Grupo a consultar (X, 0, playoff)
+
+year
+2023
+
+Temporada en la que se buscan las competiciones. Si no se indica, consulta en la temporada actual.

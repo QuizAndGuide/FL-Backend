@@ -1,0 +1,27 @@
+{
+    "competitions": [
+      {
+        "id": "1",
+        "name": "Primera División",
+        "troncal": "1",
+        "hasAlerts": true,
+        "coef": "89.000",
+        "year": "2023",
+        "flag": "https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=28",
+        "logo": "https://t.resfu.com/media/img/league_logos/primera.png?size=120x&lossy=1&v=28",
+        "phases": [
+          {
+            "id": "1",
+            "group": "1",
+            "type": "group",
+            "extraName": null,
+            "current_round": "26",
+            "current_table_round": "26",
+            "total_rounds": "38",
+            "total_teams": "20",
+            "is_current": true
+          }
+        ]
+      }
+    ]
+  }

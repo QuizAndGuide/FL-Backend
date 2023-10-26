@@ -1,0 +1,97 @@
+GET
+Partidos del día
+https://apiclient.besoccerapps.com/scripts/api/api.php?key={{APIKEY}}&format=json&req=matchsday
+Devuelve un listado de los partidos que se disputan en un día determinado y que cumplen con todos los parámetros indicados.
+
+Parámetros obligatorios:
+
+key
+req
+Parámetros opcionales:
+
+format
+date
+top
+country
+play
+init
+limit
+teams
+competitions
+lang
+matches
+skip_categories
+Caché de la petición:
+
+90 segundos
+PARAMS
+key
+{{APIKEY}}
+
+Clave única que permite a los usuarios conectarse a la API. Ésta se le proporciona al cliente en el momento en que él/ella crea una cuenta en la API.
+
+format
+json
+
+Los formatos disponibles son los siguientes: json, xml, text
+
+req
+matchsday
+
+Nombre de la solicitud que se desdea consultar
+
+date
+2023-03-12
+
+Muestra los partidos del dia proporcionado
+
+top
+1
+
+Ordena por coeficientes de partido
+
+country
+Lenguaje de salida
+
+Muestra los partidos de un país
+
+play
+1
+
+Muestra los partidos que se están jugando en el momento
+
+init
+0
+
+Indice del primer elemento a devolver en la consulta
+
+limit
+20
+
+Número de elementos que devuelve la consulta
+
+teams
+486
+
+Identificador del equipo del que se quieren obtener los datos.
+
+competitions
+1
+
+Filtra por los partidos de una competición
+
+lang
+es
+
+Lenguaje de salida
+
+matches
+18829
+
+Muestra un partido en concreto
+
+skip_categories
+1
+
+Muestra todas las competiciones menos la indicada
+

@@ -1,0 +1,42 @@
+GET
+Equipos
+http://apiclient.besoccerapps.com/scripts/api/api.php?key={{APIKEY}}&tz=Europe/Madrid&format=json&req=teams&league=1
+Devuelve un listado con los equipos que disputan un torneo en una temporada y grupo determinado.
+
+Parámetros obligatorios:
+
+key
+req
+league
+Parámetros opcionales:
+
+tz
+format
+Caché de la petición:
+
+60 segundos
+PARAMS
+key
+{{APIKEY}}
+
+Clave única que permite a los usuarios conectarse a la API. Ésta se le proporciona al cliente en el momento en que él/ella crea una cuenta en la API.
+
+tz
+Europe/Madrid
+
+Zona horaria
+
+format
+json
+
+Los formatos disponibles son los siguientes: json, xml, text
+
+req
+teams
+
+Nombre de la solicitud que se desdea consultar
+
+league
+1
+
+Identificador de la competición de la que se quiere consultar la información

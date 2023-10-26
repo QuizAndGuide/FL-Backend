@@ -1,0 +1,4 @@
+docker run -d -p 0.0.0.0:33066:3306 --name newfutbol-mysql   -e MYSQL_ROOT_PASSWORD=AdGj2727   -e MYSQL_USER=quiz-and-guide   -e MYSQL_PASSWORD=AdGj2727   -e MYSQL_DATABASE=apifutbol_db   mysql:latest
+
+
+mysql> GRANT ALL PRIVILEGES ON apifutbol_db.* TO 'quiz-and-guide'@'%';^C

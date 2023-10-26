@@ -1,0 +1,65 @@
+{
+    "table": [
+      {
+        "id": "429",
+        "group": "1",
+        "group_name": null,
+        "conference": "0",
+        "team": "Barcelona",
+        "points": "65",
+        "wins": 21,
+        "draws": 2,
+        "losses": 2,
+        "shield": "https://t.resfu.com/img_data/escudos/medium/429.jpg?size=120x&lossy=1&v=28",
+        "cflag": "https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=28",
+        "basealias": "barcelona",
+        "gf": "47",
+        "ga": "8",
+        "avg": 39,
+        "matchs_coef": "",
+        "points_coef": "",
+        "coef": "",
+        "coefficients": null,
+        "mark": 1,
+        "class_mark": "cha",
+        "round": "26",
+        "pos": "1",
+        "countrycode": "ES",
+        "abbr": "FCB",
+        "form": "wwlww",
+        "direction": ""
+      }
+    ],
+    "info": {
+      "type": "Regular",
+      "type_id": "4"
+    },
+    "legends": [
+      {
+        "group": "1",
+        "legend": [
+          {
+            "pos": 1,
+            "title": "Champions League",
+            "class_color": "cha"
+          },
+          {
+            "pos": 2,
+            "title": "Europa League",
+            "class_color": "uefa"
+          },
+          {
+            "pos": 3,
+            "title": "Conference League",
+            "class_color": "conf"
+          },
+          {
+            "pos": 5,
+            "title": "Descenso",
+            "class_color": "desc"
+          }
+        ],
+        "penalty": []
+      }
+    ]
+  }

@@ -1,0 +1,48 @@
+GET
+Competiciones
+https://apiclient.besoccerapps.com/scripts/api/api.php?key={{APIKEY}}&tz=Europe/Madrid&req=categories&filter=my_leagues&format=json
+El resultado devuelto por la petición será un listado con las competiciones que cumplen con todos los requisitos iniciales y que se encuentran en la base de datos. En caso de que los parámetros de entrada no se correspondan con un valor permitido o no se encuentren datos que cumplan todos los requisitos, la petición devolverá un array vacío.
+
+Parámetros obligatorios:
+
+key
+req
+Parámetros opcionales:
+
+tz
+format
+filter
+country
+Caché de la petición:
+
+120 segundos
+PARAMS
+key
+{{APIKEY}}
+
+Clave única que permite a los usuarios conectarse a la API. Ésta se le proporciona al cliente en el momento en que él/ella crea una cuenta en la API.
+
+tz
+Europe/Madrid
+
+Zona horaria
+
+req
+categories
+
+Nombre de la solicitud que se desdea consultar
+
+filter
+my_leagues
+
+Éste parámetro indicará qué criterios se emplearán para realizar la selección de competiciones en la base de datos. El filtro actuará según el valor que se le indique en la entrada, siendo posibles los que se comentan a continuación: ‘all’ (todas las competiciones), ‘top’ (las que ‘top’ vale 1), ‘spain’ (se disputan en España), ‘leagues’ (se juegan fuera de España), ‘competitions’ (competiciones internacionales), o ‘country’ (disputadas donde indica el parámetro con el mismo nombre), 'my_leagues' (muestra las competiciones contratadas, máximo 50)
+
+format
+json
+
+Los formatos disponibles son los siguientes: json, xml, text
+
+country
+es
+
+Parámetro que indica el código del país al que pertenecen las competiciones que se buscan. Dicho código de país se rige por el estándar ISO 3166-1 y consiste en 2 caracteres que indican el nombre del país. Existen caso especiales como es el caso de las competiciones europeas para el que se emplea el código ‘ue’ o el resto de competiciones internacionales para el que se emplea ‘wo’. Para más detalle, consultar en http://es.wikipedia.org/wiki/ISO_3166-1.

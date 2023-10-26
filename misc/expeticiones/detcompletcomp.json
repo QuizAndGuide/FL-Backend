@@ -1,0 +1,439 @@
+{
+    "competition": {
+      "id": "1",
+      "league_id": "67669",
+      "table_suffix": null,
+      "alias": "primera",
+      "coef": "89.000",
+      "name": "Primera División",
+      "year": "2023",
+      "parentId": "1",
+      "troncal": "1",
+      "total_group": "1",
+      "continent": "eu",
+      "flag": "https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=28",
+      "logo": "https://t.resfu.com/media/img/league_logos/primera.png?size=120x&lossy=1&v=28",
+      "phases": [
+        {
+          "id": "1",
+          "league_id": "67669",
+          "group": "1",
+          "type": "group",
+          "current_round": "26",
+          "current_table_round": "26",
+          "total_rounds": "38",
+          "total_teams": "20",
+          "extra_name": null,
+          "start_date": "2022-08-12",
+          "end_date": "2023-06-04",
+          "is_current": true
+        }
+      ],
+      "seasons": [
+        {
+          "title": "2023",
+          "year": "2023"
+        },
+        {
+          "title": "2022",
+          "year": "2022"
+        },
+        {
+          "title": "2021",
+          "year": "2021"
+        },
+        {
+          "title": "2020",
+          "year": "2020"
+        },
+        {
+          "title": "2019",
+          "year": "2019"
+        },
+        {
+          "title": "2018",
+          "year": "2018"
+        },
+        {
+          "title": "2017",
+          "year": "2017"
+        },
+        {
+          "title": "2016",
+          "year": "2016"
+        },
+        {
+          "title": "2015",
+          "year": "2015"
+        },
+        {
+          "title": "2014",
+          "year": "2014"
+        },
+        {
+          "title": "2013",
+          "year": "2013"
+        },
+        {
+          "title": "2012",
+          "year": "2012"
+        },
+        {
+          "title": "2011",
+          "year": "2011"
+        },
+        {
+          "title": "2010",
+          "year": "2010"
+        },
+        {
+          "title": "2009",
+          "year": "2009"
+        },
+        {
+          "title": "2008",
+          "year": "2008"
+        },
+        {
+          "title": "2007",
+          "year": "2007"
+        },
+        {
+          "title": "2006",
+          "year": "2006"
+        },
+        {
+          "title": "2005",
+          "year": "2005"
+        },
+        {
+          "title": "2004",
+          "year": "2004"
+        },
+        {
+          "title": "2003",
+          "year": "2003"
+        },
+        {
+          "title": "2002",
+          "year": "2002"
+        },
+        {
+          "title": "2001",
+          "year": "2001"
+        },
+        {
+          "title": "2000",
+          "year": "2000"
+        },
+        {
+          "title": "1999",
+          "year": "1999"
+        },
+        {
+          "title": "1998",
+          "year": "1998"
+        },
+        {
+          "title": "1997",
+          "year": "1997"
+        },
+        {
+          "title": "1996",
+          "year": "1996"
+        },
+        {
+          "title": "1995",
+          "year": "1995"
+        },
+        {
+          "title": "1994",
+          "year": "1994"
+        },
+        {
+          "title": "1993",
+          "year": "1993"
+        },
+        {
+          "title": "1992",
+          "year": "1992"
+        },
+        {
+          "title": "1991",
+          "year": "1991"
+        },
+        {
+          "title": "1990",
+          "year": "1990"
+        },
+        {
+          "title": "1989",
+          "year": "1989"
+        },
+        {
+          "title": "1988",
+          "year": "1988"
+        },
+        {
+          "title": "1987",
+          "year": "1987"
+        },
+        {
+          "title": "1986",
+          "year": "1986"
+        },
+        {
+          "title": "1985",
+          "year": "1985"
+        },
+        {
+          "title": "1984",
+          "year": "1984"
+        },
+        {
+          "title": "1983",
+          "year": "1983"
+        },
+        {
+          "title": "1982",
+          "year": "1982"
+        },
+        {
+          "title": "1981",
+          "year": "1981"
+        },
+        {
+          "title": "1980",
+          "year": "1980"
+        },
+        {
+          "title": "1979",
+          "year": "1979"
+        },
+        {
+          "title": "1978",
+          "year": "1978"
+        },
+        {
+          "title": "1977",
+          "year": "1977"
+        },
+        {
+          "title": "1976",
+          "year": "1976"
+        },
+        {
+          "title": "1975",
+          "year": "1975"
+        },
+        {
+          "title": "1974",
+          "year": "1974"
+        },
+        {
+          "title": "1973",
+          "year": "1973"
+        },
+        {
+          "title": "1972",
+          "year": "1972"
+        },
+        {
+          "title": "1971",
+          "year": "1971"
+        },
+        {
+          "title": "1970",
+          "year": "1970"
+        },
+        {
+          "title": "1969",
+          "year": "1969"
+        },
+        {
+          "title": "1968",
+          "year": "1968"
+        },
+        {
+          "title": "1967",
+          "year": "1967"
+        },
+        {
+          "title": "1966",
+          "year": "1966"
+        },
+        {
+          "title": "1965",
+          "year": "1965"
+        },
+        {
+          "title": "1964",
+          "year": "1964"
+        },
+        {
+          "title": "1963",
+          "year": "1963"
+        },
+        {
+          "title": "1962",
+          "year": "1962"
+        },
+        {
+          "title": "1961",
+          "year": "1961"
+        },
+        {
+          "title": "1960",
+          "year": "1960"
+        },
+        {
+          "title": "1959",
+          "year": "1959"
+        },
+        {
+          "title": "1958",
+          "year": "1958"
+        },
+        {
+          "title": "1957",
+          "year": "1957"
+        },
+        {
+          "title": "1956",
+          "year": "1956"
+        },
+        {
+          "title": "1955",
+          "year": "1955"
+        },
+        {
+          "title": "1954",
+          "year": "1954"
+        },
+        {
+          "title": "1953",
+          "year": "1953"
+        },
+        {
+          "title": "1952",
+          "year": "1952"
+        },
+        {
+          "title": "1951",
+          "year": "1951"
+        },
+        {
+          "title": "1950",
+          "year": "1950"
+        },
+        {
+          "title": "1949",
+          "year": "1949"
+        },
+        {
+          "title": "1948",
+          "year": "1948"
+        },
+        {
+          "title": "1947",
+          "year": "1947"
+        },
+        {
+          "title": "1946",
+          "year": "1946"
+        },
+        {
+          "title": "1945",
+          "year": "1945"
+        },
+        {
+          "title": "1944",
+          "year": "1944"
+        },
+        {
+          "title": "1943",
+          "year": "1943"
+        },
+        {
+          "title": "1942",
+          "year": "1942"
+        },
+        {
+          "title": "1941",
+          "year": "1941"
+        },
+        {
+          "title": "1940",
+          "year": "1940"
+        },
+        {
+          "title": "1939",
+          "year": "1939"
+        },
+        {
+          "title": "1938",
+          "year": "1938"
+        },
+        {
+          "title": "1937",
+          "year": "1937"
+        },
+        {
+          "title": "1936",
+          "year": "1936"
+        },
+        {
+          "title": "1935",
+          "year": "1935"
+        },
+        {
+          "title": "1934",
+          "year": "1934"
+        },
+        {
+          "title": "1933",
+          "year": "1933"
+        },
+        {
+          "title": "1932",
+          "year": "1932"
+        },
+        {
+          "title": "1931",
+          "year": "1931"
+        },
+        {
+          "title": "1930",
+          "year": "1930"
+        },
+        {
+          "title": "1929",
+          "year": "1929"
+        }
+      ],
+      "hasNews": true,
+      "related": [
+        {
+          "id": "1",
+          "alias": "primera",
+          "name": "Primera División",
+          "year": "2023",
+          "cc": "es"
+        },
+        {
+          "id": "129",
+          "alias": "copa_del_rey",
+          "name": "Copa del Rey",
+          "year": "2023",
+          "cc": "es"
+        },
+        {
+          "id": "132",
+          "alias": "supercopa",
+          "name": "Supercopa de España",
+          "year": "2023",
+          "cc": "es"
+        }
+      ]
+    }
+  }

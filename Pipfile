@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pymongo = "==3.12.3"
+sqlparse = "*"
 
 [dev-packages]
 
