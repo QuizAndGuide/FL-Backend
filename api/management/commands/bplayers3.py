@@ -7,9 +7,10 @@ import json
 class Command(BaseCommand):
     help = 'debería guardar información simple de los jugadores de un equipo'
 
-def handle(self, *args, **kwargs):
-    # team_id = input("team_id")
-    
+    def handle(self, *args, **kwargs):
+        team_id = input("team_id")
+        team_ids = [2107,429,1236,369,2120,347,486,2080,1887,2647,1217,603,2716,2563,1102,1623,137,712,4235,183]
+        
         
         url = f'https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&tz=Europe/Madrid&format=json&req=team&id={team_id}'
 
