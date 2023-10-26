@@ -114,6 +114,8 @@ class Classification(models.Model):
     abbr = models.CharField(max_length=10)
     form = models.CharField(max_length=15)
     direction = models.CharField(max_length=200,blank=True)
+    type_id = models.IntegerField(null=True,blank=True)
+    type = models.CharField(max_length=10,null=True,blank=True)
 
     def __str__(self):
         return 'Casificación'

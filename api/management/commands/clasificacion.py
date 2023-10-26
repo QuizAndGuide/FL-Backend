@@ -17,9 +17,10 @@ class Command(BaseCommand):
                 data = response.json()
                 
                 clas_data = data['table']
-            
+                
                 for n in clas_data:
-                    serializer = ClasificacionSerializer(data=n)
+                    dic = n | data['info']
+                    serializer = ClasificacionSerializer(data=dic)
                     if serializer.is_valid():
                         serializer.save()
                     else:
