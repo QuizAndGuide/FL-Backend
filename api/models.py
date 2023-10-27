@@ -87,6 +87,22 @@ class Teams(models.Model):
 
 
 class Classification(models.Model):
+    TYPE_1 = 'campeon'
+    TYPE_2 = 'cha'
+    TYPE_3 = 'uefa'
+    TYPE_4 = 'regular'
+    TYPE_5 = 'elimconf'
+    TYPE_6 = 'desc'
+
+    TYPE_CHOICES = [ 
+        (TYPE_1, 'Campe\u00f3n'),
+        (TYPE_2, 'Champions League'),
+        (TYPE_3, 'Europa League'),
+        (TYPE_4, 'laliga'),
+        (TYPE_5, 'Fase Eliminatoria Conference League'),
+        (TYPE_6, 'Descenso')
+    ]
+    
     id = models.IntegerField(primary_key=True)
     group = models.IntegerField()
     group_name = models.CharField(max_length=255,null=True,blank=True)
@@ -115,7 +131,7 @@ class Classification(models.Model):
     form = models.CharField(max_length=15)
     direction = models.CharField(max_length=200,blank=True)
     type_id = models.IntegerField(null=True,blank=True)
-    type = models.CharField(max_length=40,null=True,blank=True)
+    type = models.CharField(max_length=40,choices=TYPE_CHOICES,null=True,blank=True)
 
     def __str__(self):
         return 'Casificación'
