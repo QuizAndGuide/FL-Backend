@@ -87,25 +87,7 @@ class Teams(models.Model):
 
 
 class Clasificacion(models.Model):
-    # TYPE_1 = 'campeon'
-    # TYPE_2 = 'cha'
-    # TYPE_3 = 'uefa'
-    # TYPE_4 = 'Regular'
-    # TYPE_5 = 'elimconf'
-    # TYPE_6 = 'desc'
-                                              #es un intento de incorporar la leyenda, no es practico, por ahora
-                                              
-    # TYPE_CHOICES = [ 
-    #     (TYPE_1, 'Campe\u00f3n'),
-    #     (TYPE_2, 'Champions League'),
-    #     (TYPE_3, 'Europa League'),
-    #     (TYPE_4, 'laliga'),
-    #     (TYPE_5, 'Fase Eliminatoria Conference League'),
-    #     (TYPE_6, 'Descenso')
-    # ]
-    # type = models.CharField(max_length=40,choices=TYPE_CHOICES,null=True,blank=True)
-    
-    id = models.IntegerField(primary_key=True)
+    team_id = models.IntegerField()
     group = models.IntegerField()
     group_name = models.CharField(max_length=255,null=True,blank=True)
     conference = models.IntegerField()
@@ -139,6 +121,23 @@ class Clasificacion(models.Model):
         return 'Casificación'
     class Meta:
         ordering = ['pos']
+    # TYPE_1 = 'campeon'
+    # TYPE_2 = 'cha'
+    # TYPE_3 = 'uefa'
+    # TYPE_4 = 'Regular'
+    # TYPE_5 = 'elimconf'
+    # TYPE_6 = 'desc'
+                                              #es un intento de incorporar la leyenda, no es practico, por ahora
+                                              
+    # TYPE_CHOICES = [ 
+    #     (TYPE_1, 'Campe\u00f3n'),
+    #     (TYPE_2, 'Champions League'),
+    #     (TYPE_3, 'Europa League'),
+    #     (TYPE_4, 'laliga'),
+    #     (TYPE_5, 'Fase Eliminatoria Conference League'),
+    #     (TYPE_6, 'Descenso')
+    # ]
+    # type = models.CharField(max_length=40,choices=TYPE_CHOICES,null=True,blank=True)
 
     
 class Player(models.Model):
