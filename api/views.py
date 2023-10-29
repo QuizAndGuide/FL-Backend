@@ -11,7 +11,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework import viewsets
 from rest_framework import status
 from core.models import User
-from .models import UserProfile, Player, Teams, Classification, SimplePlayer
+from .models import UserProfile, Player, Teams, Clasificacion, SimplePlayer
 from .serializers import UserSerializer, UserProfileSerializer, PlayerSerializer, ClasificacionSerializer, TeamsSerializer, SimplePlayerSerializer
 import logging
 
@@ -160,12 +160,12 @@ class ClassificationListCreateView(generics.ListCreateAPIView):
     def get_queryset(self):
         year = self.kwargs['year']
         round = self.kwargs['round']
-        return Classification.objects.filter(year=year, round=round)
+        return Clasificacion.objects.filter(year=year, round=round)
 
     def put(self, request, *args, **kwargs):
         year = self.kwargs['year']
         round = self.kwargs['round']
-        queryset = Classification.objects.filter(year=year, round=round)
+        queryset = Clasificacion.objects.filter(year=year, round=round)
         data = request.data  # This should be a list of teams
         if isinstance(data, list):  # Check if data is a list
             # Update each team

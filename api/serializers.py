@@ -1,7 +1,7 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import UserProfile, Classification, Teams, Player, SimplePlayer
+from .models import UserProfile, Clasificacion, Teams, Player, SimplePlayer
 
 class PlayerSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,7 +18,7 @@ class SimplePlayerSerializer(serializers.ModelSerializer):
 
 class ClasificacionSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Classification
+        model = Clasificacion
         fields = '__all__'
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

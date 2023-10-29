@@ -22,7 +22,7 @@ class TeamsAdmin(admin.ModelAdmin):
     search_fields = ['basealias']
 
 
-@admin.register(models.Classification)   
+@admin.register(models.Clasificacion)   
 class ClassificationAdmin(admin.ModelAdmin):
     list_display = ['team', 'points', 'wins', 'losses', 'draws']
     search_fields = ['team']
