@@ -71,5 +71,54 @@ class Clasificacion(models.Model):
   "type": "Regular"
 }
  
-el problema que he notado es que actualiza la tabla y no guarda las clasificaciones de las jornadas anteriores,
-se me ocurre hacer el campo round primary key y asi guardar las jornadas y no tener solamente la clasificacion actual, tambien hay que implementar en el scripts la peticion de las ligas menores. 
+lo que tengo que cambiar es que actualiza la tabla y no guarda las clasificaciones de las jornadas anteriores, el json que devuelve es:
+
+table: list
+    la lista tiene 20 diccionarios asi:
+    {id: str
+    group: str
+    group_name: NoneType
+    conference: str
+    team: str
+    points: str
+    wins: int
+    draws: int
+    losses: int
+    shield: str
+    cflag: str
+    basealias: str
+    gf: str
+    ga: str
+    avg: int
+    matchs_coef: str
+    points_coef: str
+    coef: str
+    coefficients: NoneType
+    mark: int
+    class_mark: str
+    round: str
+    pos: str
+    countrycode: str
+    abbr: str
+    form: str
+    direction: str
+    },
+info: dict
+    type: str
+    type_id: str
+legends: list
+    group: str
+    legend: list
+        pos: int
+        title: str
+        class_color: str
+    penalty: list
+
+lo que estoy haciendo ahora en unir el diccionario info con cada elemento de la lista asi:
+
+
+for n in json_data['table']:
+    dict = n | json_data['info']
+
+
+
