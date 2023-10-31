@@ -120,7 +120,7 @@ class Clasificacion(models.Model):
     def __str__(self):
         return 'Casificación'
     class Meta:
-        ordering = ['pos', 'round', 'group']
+        ordering = ['round', 'pos', 'group']
     # TYPE_1 = 'campeon'
     # TYPE_2 = 'cha'
     # TYPE_3 = 'uefa'
