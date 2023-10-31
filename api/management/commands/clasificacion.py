@@ -20,16 +20,23 @@ class Command(BaseCommand):
                 
                 for n in clas_data:
                     dic = n | data['info']
-
                     dic['team_id'] = dic.pop('id')
+                    
+                    existing_record = Clasificacion.objects.filter(round=dic['round']).first()
 
-                
-                    serializer = ClasificacionSerializer(data=dic)
-                    if serializer.is_valid():
-                        serializer.save()
+                    if existing_record:
+                        # Si el registro ya existe, actualiza sus campos con los nuevos datos
+                        for key, value in dic.items():
+                            setattr(existing_record, key, value)
+                        existing_record.save()                    
+
                     else:
-                        errors = serializer.errors
-                        print(f"Validation errors for team: {errors}")
+                        serializer = ClasificacionSerializer(data=dic)
+                        if serializer.is_valid():
+                            serializer.save()
+                        else:
+                            errors = serializer.errors
+                            print(f"Validation errors for team: {errors}")
 
             # Error handling for unsuccessful requests
             else:
