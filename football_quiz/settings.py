@@ -84,6 +84,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'apifutbol_db',  # Your MongoDB database name
+        'ENFORCE_SCHEMA': True,
     }
 }
 # DATABASES = {

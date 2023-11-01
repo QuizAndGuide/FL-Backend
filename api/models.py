@@ -84,7 +84,6 @@ class Teams(models.Model):
     def __str__(self):
         return self.basealias
 
-from djongo import models
 
 class Table(models.Model):
     id = models.IntegerField(primary_key=True)
@@ -115,32 +114,31 @@ class Table(models.Model):
     form = models.CharField(max_length=255)
     direction = models.CharField(max_length=255, blank=True, null=True)
 
-    
-
-    # class Meta:
-    #     abstract = True
+    class Meta:
+        abstract = True
         
 class Info(models.Model):
     type_id = models.IntegerField(primary_key=True)
     type = models.CharField(max_length=10, blank=True, null=True)
     
-    # class Meta:
-    #     abstract = True
+    class Meta:
+        abstract = True
         
 class Legend(models.Model):
     pos = models.IntegerField(primary_key=True)
     title = models.CharField(max_length=255, blank=True, null=True)
     class_color = models.CharField(max_length=20, blank=True, null=True)
     
-    # class Meta:
-    #     abstract = True
+    class Meta:
+        abstract = True
         
-    
-
 class Legends(models.Model):
     group = models.CharField(max_length=10, primary_key=True)
     legend = models.ArrayField(model_container=Legend, blank=True, null=True)
     penalty = models.JSONField(blank=True, null=True)
+    
+    class Meta:
+        abstract = True
     
 class Clasificacion(models.Model):
     table = models.ArrayField(model_container=Table, blank=True, null=True)
