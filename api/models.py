@@ -84,60 +84,70 @@ class Teams(models.Model):
     def __str__(self):
         return self.basealias
 
+from djongo import models
 
-
-class Clasificacion(models.Model):
-    team_id = models.IntegerField()
-    group = models.IntegerField()
-    group_name = models.CharField(max_length=255,null=True,blank=True)
-    conference = models.IntegerField()
+class Table(models.Model):
+    id = models.IntegerField(primary_key=True)
+    group = models.IntegerField(blank=True, null=True)
+    group_name = models.CharField(max_length=255, blank=True, null=True)
+    conference = models.IntegerField(blank=True, null=True)
     team = models.CharField(max_length=200)
-    points = models.IntegerField()
-    wins = models.IntegerField()
-    draws = models.IntegerField()
-    losses = models.IntegerField()
-    shield = models.URLField(null=True,blank=True)
-    cflag = models.URLField(null=True,blank=True)
+    points = models.IntegerField(blank=True, null=True)
+    wins = models.IntegerField(blank=True, null=True)
+    draws = models.IntegerField(blank=True, null=True)
+    losses = models.IntegerField(blank=True, null=True)
+    shield = models.URLField(blank=True, null=True)
+    cflag = models.URLField(blank=True, null=True)
     basealias = models.CharField(max_length=255)
-    gf = models.IntegerField(null=True,blank=True)
-    ga = models.IntegerField(null=True,blank=True)
-    avg = models.IntegerField()
-    matchs_coef = models.CharField(max_length=255,null=True,blank=True)
-    points_coef = models.CharField(max_length=255,null=True,blank=True)
-    coef = models.CharField(max_length=255,null=True,blank=True)
-    coefficients = models.CharField(max_length=255,null=True,blank=True)
-    mark = models.CharField(max_length=255,null=True,blank=True)
-    class_mark = models.CharField(max_length=255,null=True,blank=True)
-    round = models.IntegerField()
-    pos = models.IntegerField()
-    countrycode = models.CharField(max_length=4)
-    abbr = models.CharField(max_length=10)
-    form = models.CharField(max_length=15)
-    direction = models.CharField(max_length=200,blank=True)
-    type_id = models.IntegerField(null=True,blank=True)
-    type = models.CharField(max_length=40,null=True,blank=True)
+    gf = models.IntegerField(blank=True, null=True)
+    ga = models.IntegerField(blank=True, null=True)
+    avg = models.IntegerField(blank=True, null=True)
+    matchs_coef = models.CharField(max_length=255, blank=True, null=True)
+    points_coef = models.CharField(max_length=255, blank=True, null=True)
+    coef = models.CharField(max_length=255, blank=True, null=True)
+    coefficients = models.CharField(max_length=255, blank=True, null=True)
+    mark = models.CharField(max_length=255, blank=True, null=True)
+    class_mark = models.CharField(max_length=255, blank=True, null=True)
+    round = models.IntegerField(blank=True, null=True)
+    pos = models.IntegerField(blank=True, null=True)
+    countrycode = models.CharField(max_length=10)
+    abbr = models.CharField(max_length=20)
+    form = models.CharField(max_length=255)
+    direction = models.CharField(max_length=255, blank=True, null=True)
 
-    def __str__(self):
-        return 'Casificación'
-    class Meta:
-        ordering = ['round', 'pos', 'group']
-    # TYPE_1 = 'campeon'
-    # TYPE_2 = 'cha'
-    # TYPE_3 = 'uefa'
-    # TYPE_4 = 'Regular'
-    # TYPE_5 = 'elimconf'
-    # TYPE_6 = 'desc'
-                                              #es un intento de incorporar la leyenda, no es practico, por ahora
-                                              
-    # TYPE_CHOICES = [ 
-    #     (TYPE_1, 'Campe\u00f3n'),
-    #     (TYPE_2, 'Champions League'),
-    #     (TYPE_3, 'Europa League'),
-    #     (TYPE_4, 'laliga'),
-    #     (TYPE_5, 'Fase Eliminatoria Conference League'),
-    #     (TYPE_6, 'Descenso')
-    # ]
-    # type = models.CharField(max_length=40,choices=TYPE_CHOICES,null=True,blank=True)
+    
+
+    # class Meta:
+    #     abstract = True
+        
+class Info(models.Model):
+    type_id = models.IntegerField(primary_key=True)
+    type = models.CharField(max_length=10, blank=True, null=True)
+    
+    # class Meta:
+    #     abstract = True
+        
+class Legend(models.Model):
+    pos = models.IntegerField(primary_key=True)
+    title = models.CharField(max_length=255, blank=True, null=True)
+    class_color = models.CharField(max_length=20, blank=True, null=True)
+    
+    # class Meta:
+    #     abstract = True
+        
+    
+
+class Legends(models.Model):
+    group = models.CharField(max_length=10, primary_key=True)
+    legend = models.ArrayField(model_container=Legend, blank=True, null=True)
+    penalty = models.JSONField(blank=True, null=True)
+    
+class Clasificacion(models.Model):
+    table = models.ArrayField(model_container=Table, blank=True, null=True)
+
+    info = models.EmbeddedField(model_container=Info)
+
+    legends = models.ArrayField(model_container=Legends, blank=True, null=True)
 
     
 class Player(models.Model):

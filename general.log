@@ -6,3 +6,1066 @@
 2023-10-29 15:22:31,767 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_clasificacion" ALTER COLUMN "id" TYPE int
 2023-10-29 15:32:54,230 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_clasificacion" ALTER COLUMN "id" TYPE int
 2023-10-29 15:34:03,193 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_clasificacion" ALTER COLUMN "id" TYPE int
+2023-11-01 18:15:06,184 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:15:12,079 (WARNING) - django.request - Not Found: /favicon.ico
+2023-11-01 18:15:12,090 (WARNING) - django.request - Not Found: /apple-touch-icon-precomposed.png
+2023-11-01 18:15:12,098 (WARNING) - django.request - Not Found: /apple-touch-icon.png
+2023-11-01 18:25:59,750 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:26:00,173 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:27:36,460 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:27:36,988 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:33:29,433 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:33:29,788 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:33:41,047 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:33:41,365 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:34:05,018 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:34:05,777 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:34:08,947 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:34:09,138 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:34:54,799 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:34:55,154 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:36:32,384 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:36:32,991 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:36:39,197 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:36:39,423 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:40:16,640 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:40:17,394 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:40:30,854 (ERROR) - django.request - Internal Server Error: /admin/api/clasificacion/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 669, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: "{'id': 2107, 'group': 1, 'group_name': None, 'conference': 0, 'team': 'Real Madrid', 'points': 28, 'wins': 9, 'draws': 1, 'losses': 1, 'shield': 'https://t.resfu.com/img_data/escudos/medium/2107.jpg?size=120x&lossy=1&v=36', 'cflag': 'https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=36', 'basealias': 'real-madrid', 'gf': 23, 'ga': 8, 'avg': 15, 'matchs_coef': '', 'points_coef': '', 'coef': '', 'coefficients': None, 'mark': '1', 'class_mark': 'campeon', 'round': 12, 'pos': 1, 'countrycode': 'ES', 'abbr': 'RMA', 'form': 'wwwdw', 'direction': ''}"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 333, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Clasificacion has no field named '{'id': 2107, 'group': 1, 'group_name': None, 'conference': 0, 'team': 'Real Madrid', 'points': 28, 'wins': 9, 'draws': 1, 'losses': 1, 'shield': 'https://t.resfu.com/img_data/escudos/medium/2107.jpg?size=120x&lossy=1&v=36', 'cflag': 'https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=36', 'basealias': 'real-madrid', 'gf': 23, 'ga': 8, 'avg': 15, 'matchs_coef': '', 'points_coef': '', 'coef': '', 'coefficients': None, 'mark': '1', 'class_mark': 'campeon', 'round': 12, 'pos': 1, 'countrycode': 'ES', 'abbr': 'RMA', 'form': 'wwwdw', 'direction': ''}'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 326, in result_list
+    headers = list(result_headers(cl))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 90, in result_headers
+    text, attr = label_for_field(
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 361, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup '{'id': 2107, 'group': 1, 'group_name': None, 'conference': 0, 'team': 'Real Madrid', 'points': 28, 'wins': 9, 'draws': 1, 'losses': 1, 'shield': 'https://t.resfu.com/img_data/escudos/medium/2107.jpg?size=120x&lossy=1&v=36', 'cflag': 'https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=36', 'basealias': 'real-madrid', 'gf': 23, 'ga': 8, 'avg': 15, 'matchs_coef': '', 'points_coef': '', 'coef': '', 'coefficients': None, 'mark': '1', 'class_mark': 'campeon', 'round': 12, 'pos': 1, 'countrycode': 'ES', 'abbr': 'RMA', 'form': 'wwwdw', 'direction': ''}' on Clasificacion or ClassificationAdmin
+2023-11-01 18:42:43,047 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:42:43,396 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:42:51,269 (WARNING) - django.request - Not Found: /admin/api/clasificacion/
+2023-11-01 18:43:08,361 (WARNING) - django.request - Not Found: /admin/api/clasificacion/
+2023-11-01 18:43:15,903 (ERROR) - django.request - Internal Server Error: /admin/api/table/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 669, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: "{'id': 2107, 'group': 1, 'group_name': None, 'conference': 0, 'team': 'Real Madrid', 'points': 28, 'wins': 9, 'draws': 1, 'losses': 1, 'shield': 'https://t.resfu.com/img_data/escudos/medium/2107.jpg?size=120x&lossy=1&v=36', 'cflag': 'https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=36', 'basealias': 'real-madrid', 'gf': 23, 'ga': 8, 'avg': 15, 'matchs_coef': '', 'points_coef': '', 'coef': '', 'coefficients': None, 'mark': '1', 'class_mark': 'campeon', 'round': 12, 'pos': 1, 'countrycode': 'ES', 'abbr': 'RMA', 'form': 'wwwdw', 'direction': ''}"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 333, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Table has no field named '{'id': 2107, 'group': 1, 'group_name': None, 'conference': 0, 'team': 'Real Madrid', 'points': 28, 'wins': 9, 'draws': 1, 'losses': 1, 'shield': 'https://t.resfu.com/img_data/escudos/medium/2107.jpg?size=120x&lossy=1&v=36', 'cflag': 'https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=36', 'basealias': 'real-madrid', 'gf': 23, 'ga': 8, 'avg': 15, 'matchs_coef': '', 'points_coef': '', 'coef': '', 'coefficients': None, 'mark': '1', 'class_mark': 'campeon', 'round': 12, 'pos': 1, 'countrycode': 'ES', 'abbr': 'RMA', 'form': 'wwwdw', 'direction': ''}'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 326, in result_list
+    headers = list(result_headers(cl))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 90, in result_headers
+    text, attr = label_for_field(
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 361, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup '{'id': 2107, 'group': 1, 'group_name': None, 'conference': 0, 'team': 'Real Madrid', 'points': 28, 'wins': 9, 'draws': 1, 'losses': 1, 'shield': 'https://t.resfu.com/img_data/escudos/medium/2107.jpg?size=120x&lossy=1&v=36', 'cflag': 'https://t.resfu.com/media/img/flags/st3/large/es.png?size=100x65c&lossy=1&v=36', 'basealias': 'real-madrid', 'gf': 23, 'ga': 8, 'avg': 15, 'matchs_coef': '', 'points_coef': '', 'coef': '', 'coefficients': None, 'mark': '1', 'class_mark': 'campeon', 'round': 12, 'pos': 1, 'countrycode': 'ES', 'abbr': 'RMA', 'form': 'wwwdw', 'direction': ''}' on Table or ClassificationAdmin
+2023-11-01 18:50:17,941 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:50:18,355 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:50:23,962 (ERROR) - django.request - Internal Server Error: /admin/api/table/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1932, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 827, in get_changelist_instance
+    list_display = self.get_list_display(request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/pypro/djongofootball/api/admin.py", line 42, in get_list_display
+    fields_to_display = [str(field) for field in serializer]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/pypro/djongofootball/api/admin.py", line 42, in <listcomp>
+    fields_to_display = [str(field) for field in serializer]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 538, in __iter__
+    yield self[field.field_name]
+          ~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 542, in __getitem__
+    value = self.data.get(key)
+            ^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 249, in data
+    raise AssertionError(msg)
+AssertionError: When a serializer is passed a `data` keyword argument you must call `.is_valid()` before attempting to access the serialized `.data` representation.
+You should either call `.is_valid()` first, or access `.initial_data` instead.
+2023-11-01 18:50:52,423 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:50:52,780 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:50:57,488 (ERROR) - django.request - Internal Server Error: /admin/api/table/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 669, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: '<BoundField value=None errors=None>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 333, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Table has no field named '<BoundField value=None errors=None>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 326, in result_list
+    headers = list(result_headers(cl))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 90, in result_headers
+    text, attr = label_for_field(
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 361, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup '<BoundField value=None errors=None>' on Table or ClassificationAdmin
+2023-11-01 18:51:43,133 (ERROR) - django.request - Internal Server Error: /admin/api/table/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 669, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: '<BoundField value=None errors=None>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 333, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Table has no field named '<BoundField value=None errors=None>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 326, in result_list
+    headers = list(result_headers(cl))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 90, in result_headers
+    text, attr = label_for_field(
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 361, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup '<BoundField value=None errors=None>' on Table or ClassificationAdmin
+2023-11-01 18:51:46,375 (ERROR) - django.request - Internal Server Error: /admin/api/table/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 669, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: '<BoundField value=None errors=None>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 333, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Table has no field named '<BoundField value=None errors=None>'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 326, in result_list
+    headers = list(result_headers(cl))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 90, in result_headers
+    text, attr = label_for_field(
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 361, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup '<BoundField value=None errors=None>' on Table or ClassificationAdmin
+2023-11-01 18:57:46,372 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:57:46,729 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:59:01,678 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 18:59:02,070 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 18:59:06,021 (WARNING) - django.request - Not Found: /admin/api/table/
+2023-11-01 18:59:16,124 (ERROR) - django.request - Internal Server Error: /admin/api/clasificacion/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 669, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 333, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Clasificacion has no field named 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 326, in result_list
+    headers = list(result_headers(cl))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 90, in result_headers
+    text, attr = label_for_field(
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 361, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'group' on Clasificacion or ClassificationAdmin
+2023-11-01 19:01:25,668 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 19:01:26,088 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 19:01:29,860 (ERROR) - django.request - Internal Server Error: /admin/api/clasificacion/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1932, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 827, in get_changelist_instance
+    list_display = self.get_list_display(request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/pypro/djongofootball/api/admin.py", line 44, in get_list_display
+    table_data = json.loads(last_instance.table)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+2023-11-01 19:03:07,359 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 19:03:07,757 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 19:03:10,605 (ERROR) - django.request - Internal Server Error: /admin/api/clasificacion/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1932, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 827, in get_changelist_instance
+    list_display = self.get_list_display(request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/pypro/djongofootball/api/admin.py", line 40, in get_list_display
+    last_instance = Clasificacion.objects.all().last()
+                    ^^^^^^^^^^^^^
+NameError: name 'Clasificacion' is not defined
+2023-11-01 19:03:26,648 (ERROR) - django.request - Internal Server Error: /admin/api/clasificacion/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1932, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 827, in get_changelist_instance
+    list_display = self.get_list_display(request)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/pypro/djongofootball/api/admin.py", line 40, in get_list_display
+    last_instance = Clasificacion.objects.all().last()
+                    ^^^^^^^^^^^^^
+NameError: name 'Clasificacion' is not defined
+2023-11-01 19:04:29,701 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/admin.py changed, reloading.
+2023-11-01 19:04:30,097 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 19:04:33,410 (ERROR) - django.request - Internal Server Error: /admin/api/clasificacion/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 669, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 333, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/options.py", line 671, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Clasificacion has no field named 'group'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 326, in result_list
+    headers = list(result_headers(cl))
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/templatetags/admin_list.py", line 90, in result_headers
+    text, attr = label_for_field(
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/utils.py", line 361, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'group' on Clasificacion or ClassificationAdmin
+2023-11-01 19:17:58,912 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-01 19:17:59,267 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-01 19:24:08,498 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_legend" ADD CONSTRAINT "api_legend_pos_cd506833_pk" PRIMARY KEY ("pos")
+2023-11-01 19:24:49,073 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_legend" ADD CONSTRAINT "api_legend_pos_cd506833_pk" PRIMARY KEY ("pos")
+2023-11-01 19:25:50,996 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_legend" ADD CONSTRAINT "api_legend_pos_cd506833_pk" PRIMARY KEY ("pos")

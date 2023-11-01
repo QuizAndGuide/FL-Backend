@@ -4,6 +4,8 @@ from django.db.models.query import QuerySet
 from django.utils.html import format_html, urlencode
 from django.urls import reverse
 from . import models
+from .serializers import TableSerializer
+import json
 
 
 @admin.register(models.UserProfile)
@@ -22,11 +24,31 @@ class TeamsAdmin(admin.ModelAdmin):
     search_fields = ['basealias']
 
 
-@admin.register(models.Clasificacion)   
+# @admin.register(models.Clasificacion)   
+# class ClassificationAdmin(admin.ModelAdmin):
+#     tabla = []
+#     queryset =  models.Clasificacion.objects.all().last()
+#     for i in queryset.table:
+#         tabla.append(str(i))
+#     list_display = tabla
+    
+
+@admin.register(models.Clasificacion)
 class ClassificationAdmin(admin.ModelAdmin):
-    list_display = ['team', 'points', 'wins', 'losses', 'draws']
-    search_fields = ['team']
-    ordering = ['points']
+    def get_list_display(self, request):
+        # Obtén la última instancia de Clasificacion en tiempo de ejecución
+        last_instance = models.Clasificacion.objects.all().last()
+        
+        # Asegúrate de que 'table' no sea None
+        if last_instance.table:
+            # Obtén las claves de un diccionario de la primera entrada (si es una lista de diccionarios)
+            first_entry = last_instance.table[0]
+            fields_to_display = first_entry.keys() if isinstance(first_entry, dict) else []
+        else:
+            fields_to_display = []  # En caso de que 'table' esté vacío o sea None
+
+        return fields_to_display
+    
 
 
 @admin.register(models.Player)
