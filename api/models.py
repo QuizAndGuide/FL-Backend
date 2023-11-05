@@ -113,16 +113,20 @@ class Table(models.Model):
     abbr = models.CharField(max_length=20)
     form = models.CharField(max_length=255)
     direction = models.CharField(max_length=255, blank=True, null=True)
-
-    class Meta:
-        abstract = True
-        
-class Info(models.Model):
-    type_id = models.IntegerField(primary_key=True)
+    type_id = models.CharField(max_length=10, blank=True, null=True)
     type = models.CharField(max_length=10, blank=True, null=True)
+    # Estos campos están relacionados con el diccionario "info"
+    # donde "type_id" representa el ID del tipo y "type" es el tipo en sí.
+
+    # class Meta:
+    #     abstract = True
+        
+# class Info(models.Model):
+#     type_id = models.IntegerField(primary_key=True)
+#     type = models.CharField(max_length=10, blank=True, null=True)
     
-    class Meta:
-        abstract = True
+#     class Meta:
+#         abstract = True
         
 class Legend(models.Model):
     pos = models.IntegerField(primary_key=True)
@@ -143,7 +147,7 @@ class Legends(models.Model):
 class Clasificacion(models.Model):
     table = models.ArrayField(model_container=Table, blank=True, null=True)
 
-    info = models.EmbeddedField(model_container=Info)
+    # info = models.EmbeddedField(model_container=Info)
 
     legends = models.ArrayField(model_container=Legends, blank=True, null=True)
 

@@ -1069,3 +1069,5 @@ AttributeError: Unable to lookup 'group' on Clasificacion or ClassificationAdmin
 2023-11-01 19:24:08,498 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_legend" ADD CONSTRAINT "api_legend_pos_cd506833_pk" PRIMARY KEY ("pos")
 2023-11-01 19:24:49,073 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_legend" ADD CONSTRAINT "api_legend_pos_cd506833_pk" PRIMARY KEY ("pos")
 2023-11-01 19:25:50,996 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_legend" ADD CONSTRAINT "api_legend_pos_cd506833_pk" PRIMARY KEY ("pos")
+2023-11-03 10:31:15,837 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_table" ALTER COLUMN "type_id" TYPE string
+2023-11-03 10:31:59,690 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_table" ALTER COLUMN "type_id" TYPE string

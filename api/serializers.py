@@ -1,7 +1,7 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import UserProfile, Clasificacion, Teams, Player, SimplePlayer, Table, Legend, Info, Legends
+from .models import UserProfile, Clasificacion, Teams, Player, SimplePlayer, Table, Legend, Legends  #, Info
 
 class PlayerSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,10 +19,10 @@ class TableSerializer(serializers.ModelSerializer):
         model = Table
         fields = '__all__'
 
-class InfoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Info
-        fields = '__all__'
+# class InfoSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Info
+#         fields = '__all__'
         
 class LegendSerializer(serializers.ModelSerializer):
     class Meta:
@@ -38,7 +38,7 @@ class LegendsSerializer(serializers.ModelSerializer):
 
 class ClasificacionSerializer(serializers.ModelSerializer):
     table = TableSerializer(many=True)
-    info = InfoSerializer()
+    # info = InfoSerializer()
     legends = LegendsSerializer(many=True)
 
     class Meta:

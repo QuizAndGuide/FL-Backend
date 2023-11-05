@@ -1,7 +1,7 @@
 import requests
 from django.core.management.base import BaseCommand
-from api.serializers import ClasificacionSerializer
-from api.models import Clasificacion
+from api.serializers import ClasificacionSerializer, TableSerializer, LegendsSerializer, LegendSerializer
+from api.models import Clasificacion, Legend, Legends, Table 
 import json
 
 class Command(BaseCommand):
@@ -15,26 +15,44 @@ class Command(BaseCommand):
 
             if response.status_code == 200:
                 data = response.json()
-                # # serializer = ClasificacionSerializer(data=data)
-                # # if serializer.is_valid():
-                # #     serializer.save()
-                # # else:
-                # #     errors = serializer.errors
-                # #     print(f"Validation errors for team: {errors}")
+                table = data['table']
+
+                # Verificar si la lista 'table' no está vacía
+                if table:
+                    first_item = table[0]
+                    round_value = first_item.get('round')
+
+                    # Buscar el registro existente en función del campo 'round'
+                    existing_record = Table.objects.filter(round=round_value).first()
+
+                    # Serializar y guardar todos los elementos de la lista 'table'
+                    for item in table:
+                        serializer = TableSerializer(existing_record, data=item)
+                        if serializer.is_valid():
+                            serializer.save()
+                            self.stdout.write("Registro actualizado o creado correctamente.")
+                        else:
+                            errors = serializer.errors
+                            self.stderr.write(f"Errores de validación para el registro: {errors}")
                     
-                # serializer = Clasificacion(data)
+                # data = response.json()
+                # serializer = ClasificacionSerializer(data=data)
+                # serializer.is_valid()
+                # serializer.save()
+                    
+                # # serializer = Clasificacion(data)
                 
-                # serializer.save() 
+                # # serializer.save() 
                 
-                clasificacion_data = {
-                    "table": data.get("table", []),
-                    "info": data.get("info", {}),
-                    "legends": data.get("legends", []),
-                }
+                # clasificacion_data = {
+                #     "table": data.get("table", []),
+                #     "info": data.get("info", {}),
+                #     "legends": data.get("legends", []),
+                # }
                 
                 # Guarda los datos en el modelo Clasificacion
-                clasificacion = Clasificacion(**clasificacion_data)
-                clasificacion.save()
+                # clasificacion = Clasificacion(**clasificacion_data)
+                # clasificacion.save()
                 
                 self.stdout.write("Datos de clasificación guardados correctamente.")
             # Error handling for unsuccessful requests
