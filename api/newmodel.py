@@ -8,12 +8,12 @@ class UserProfile(models.Model):
     MEMBERSHIP_PREMIUMPLUS = 'P+'
 
     MEMBERSHIP_CHOICES = [
-        (MEMBERSHIP_FREE 'Free')
-        (MEMBERSHIP_PREMIUM 'Premium')
-        (MEMBERSHIP_PREMIUMPLUS 'Premium+')
+        (MEMBERSHIP_FREE, 'Free'),
+        (MEMBERSHIP_PREMIUM, 'Premium'),
+        (MEMBERSHIP_PREMIUMPLUS, 'Premium+'),
     ]
     id = models.IntegerField(primary_key=True)
-    email = models.EmailField(max_length=100 unique=True)
+    email = models.EmailField(max_length=100, unique=True)
     coins = models.IntegerField(default=1000) 
     rating = models.IntegerField(default=1200)  
     country = models.CharField(max_length=100)
@@ -21,9 +21,9 @@ class UserProfile(models.Model):
     language = models.CharField(max_length=100)
     team = models.CharField(max_length=100)
     membership = models.CharField(
-        max_length=2 choices=MEMBERSHIP_CHOICES default=MEMBERSHIP_FREE)
+        max_length=2, choices=MEMBERSHIP_CHOICES, default=MEMBERSHIP_FREE)
     user = models.OneToOneField(
-        settings.AUTH_USER_MODEL on_delete=models.CASCADE)
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.user.first_name} {self.user.last_name}'
@@ -41,6 +41,7 @@ class UserProfile(models.Model):
         permissions = [
             ('view_history', 'Can view history')
         ]
+
 
 
 class Category(models.Model):
