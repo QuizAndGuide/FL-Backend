@@ -1,13 +1,54 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import UserProfile, Jornada
+from .models import UserProfile, Clasificacion, Teams, Player, SimplePlayer, Table, Legend, Legends  #, Info
 
+class PlayerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Player
+        fields = '__all__'
+        
+
+class SimplePlayerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SimplePlayer
+        fields = '__all__'
+    
+class TableSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Table
+        fields = '__all__'
+
+# class InfoSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Info
+#         fields = '__all__'
+        
+class LegendSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Legend
+        fields = '__all__'
+
+class LegendsSerializer(serializers.ModelSerializer):
+    legend = LegendSerializer(many=True)
+
+    class Meta:
+        model = Legends
+        fields = '__all__'
+
+class ClasificacionSerializer(serializers.ModelSerializer):
+    table = TableSerializer(many=True)
+    # info = InfoSerializer()
+    legends = LegendsSerializer(many=True)
+
+    class Meta:
+        model = Clasificacion
+        fields = '__all__'
+        
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id','username','email','is_staff','date_joined']
-
 
 class UserProfileSerializer(serializers.ModelSerializer):
     user = UserSerializer()
@@ -17,18 +58,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class JornadaSerializer(serializers.ModelSerializer):
+class TeamsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Jornada
-        fields = [ 'year', 'id', 'group', 'total_group', 'round',
-                    'local', 'visitor', 'league_id', 'stadium', 'team1',
-                    'team2', 'conference', 'dteam1', 'dteam2', 'numc',
-                    'no_hour', 'local_abbr', 'visitor_abbr', 'competition_name',
-                    'competition_id', 'split_league', 'type', 'type_id', 'playoffs',
-                    'group_code', 'total_rounds', 'coef', 'cflag_local', 'cflag_visitor',
-                    'local_shield', 'visitor_shield', 'extraTxt', 'schedule', 'date',
-                    'hour', 'minute', 'local_goals', 'visitor_goals', 'result',
-                    'live_minute', 'status', 'channels', 'winner', 'penaltis1', 'penaltis2' ]
-        ordering = ['schedule']
-        
-
+        model = Teams
+        fields = '__all__'
