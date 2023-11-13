@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.conf import settings
 from djongo import models
 
-class UserProfile(models.Model):
+class Profile(models.Model):
     MEMBERSHIP_FREE = 'F'
     MEMBERSHIP_PREMIUM = 'P'
     MEMBERSHIP_PREMIUMPLUS = 'P+'
@@ -46,7 +46,7 @@ class UserProfile(models.Model):
     
 class Jornada(models.Model):
        year = models.IntegerField()
-       id = models.IntegerField()
+       id = models.IntegerField(primary_key=True)
        group = models.IntegerField()
        total_group = models.IntegerField()
        round = models.IntegerField()

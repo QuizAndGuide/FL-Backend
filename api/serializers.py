@@ -1,7 +1,7 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import UserProfile, Jornada
+from .models import Profile, Jornada
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -9,12 +9,12 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['id','username','email','is_staff','date_joined']
 
 
-class UserProfileSerializer(serializers.ModelSerializer):
-    user = UserSerializer()
+class ProfileSerializer(serializers.ModelSerializer):
+    user_id = serializers.IntegerField(read_only=True)
 
     class Meta:
-        model = UserProfile
-        fields = '__all__'
+        model = Profile
+        fields = ['id', 'user_id', 'phone', 'birth_date', 'membership']
 
 
 class JornadaSerializer(serializers.ModelSerializer):

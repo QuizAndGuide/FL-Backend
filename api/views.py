@@ -3,30 +3,37 @@ from django.shortcuts import get_object_or_404
 from rest_framework import generics, viewsets, status
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
 from datetime import datetime
-from .models import UserProfile, Jornada
-from .serializers import UserSerializer, UserProfileSerializer, JornadaSerializer
+from .models import Profile, Jornada
+from .serializers import ProfileSerializer, JornadaSerializer
+from .permissions import *
 from rest_framework.exceptions import NotFound
 
-class UserViewSet(generics.ListCreateAPIView):
-    queryset = UserProfile.objects.all()
-    serializer_class = UserSerializer
-    permission_classes = [IsAuthenticated]
+class ProfileViewSet(viewsets.ModelViewSet):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+    permission_classes = [IsAdminUser]
 
-class UserProfileView(generics.RetrieveUpdateDestroyAPIView):
-    serializer_class = UserProfileSerializer
-    permission_classes = [IsAuthenticated]
-    lookup_field = 'username'
+    @action(detail=True, permission_classes=[ViewCustomerHistoryPermission])
+    def history(self, request, pk):
+        return Response('ok')
 
-    def get_queryset(self):
-        username = self.kwargs.get('username')
-        if username is not None:
-            return UserProfile.objects.filter(username=username)
-        else:
-            raise NotFound("El parámetro 'username' es requerido")
+    @action(detail=False, methods=['GET', 'PUT'], permission_classes=[IsAuthenticated])
+    def me(self, request):
+        customer = Profile.objects.get(
+            user_id=request.user.id)
+        if request.method == 'GET':
+            serializer = ProfileSerializer(customer)
+            return Response(serializer.data)
+        elif request.method == 'PUT':
+            serializer = ProfileSerializer(customer, data=request.data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            return Response(serializer.data)
+
     
 
 

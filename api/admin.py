@@ -7,8 +7,8 @@ from . import models
 import json
 
 
-@admin.register(models.UserProfile)
-class UserProfileAdmin(admin.ModelAdmin):
+@admin.register(models.Profile)
+class ProfileAdmin(admin.ModelAdmin):
     list_display = ['first_name', 'last_name', 'membership']
     list_editable = ['membership']
     list_per_page = 10
@@ -28,3 +28,4 @@ class NextGames(admin.ModelAdmin):
                     'local_shield', 'visitor_shield', 'extraTxt', 'schedule', 'date',
                     'hour', 'minute', 'local_goals', 'visitor_goals', 'result',
                     'live_minute', 'status', 'channels', 'winner', 'penaltis1', 'penaltis2' ]
+    ordering = ['-schedule']

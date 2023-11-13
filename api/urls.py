@@ -1,11 +1,11 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import UserViewSet, LoginViewSet, JornadaViewSet
+from django.urls import path
+from django.urls.conf import include
+from rest_framework_nested import routers
+from . import views
 
-router = DefaultRouter()
-router.register(r'users', UserViewSet, basename='users')
-router.register(r'proximos_partidos', JornadaViewSet, basename='proximos_partidos')
+router = routers.DefaultRouter()
+router.register('profile', views.ProfileViewSet)
+router.register('proximos_partidos', views.JornadaViewSet, basename='proximos_partidos')
 
-urlpatterns = [
-    path('', include(router.urls)),
-]
+
+urlpatterns = router.urls
