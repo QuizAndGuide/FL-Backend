@@ -6,7 +6,6 @@ from djongo import models
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     id = models.AutoField(primary_key=True, verbose_name='ID')
-    password = models.CharField(max_length=128, verbose_name='password')
     last_login = models.DateTimeField(blank=True,
                                     null=True,
                                     verbose_name='last login')
@@ -33,7 +32,6 @@ class User(AbstractUser):
                                     verbose_name='active')
     date_joined = models.DateTimeField(default=django.utils.timezone.now,
                                         verbose_name='date joined')
-    email = models.EmailField(max_length=254, unique=True)
     groups = models.ManyToManyField(blank=True,
                                     help_text='The groups this user belongs to. A user will get all permissions granted to each of their groups.',
                                     related_name='user_set',

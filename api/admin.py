@@ -17,44 +17,14 @@ class UserProfileAdmin(admin.ModelAdmin):
     search_fields = ['first_name__istartswith', 'last_name__istartswith']
 
    
-@admin.register(models.Teams)
-class TeamsAdmin(admin.ModelAdmin):
-    list_display = ['basealias', 'city']
-    search_fields = ['basealias']
-
-
-# @admin.register(models.Clasificacion)   
-# class ClassificationAdmin(admin.ModelAdmin):
-#     tabla = []
-#     queryset =  models.Clasificacion.objects.all().last()
-#     for i in queryset.table:
-#         tabla.append(str(i))
-#     list_display = tabla
-    
-
-@admin.register(models.Clasificacion)
-class ClassificationAdmin(admin.ModelAdmin):
-    def get_list_display(self, request):
-        # Obtén la última instancia de Clasificacion en tiempo de ejecución
-        last_instance = models.Clasificacion.objects.all().last()
-        
-        # Asegúrate de que 'table' no sea None
-        if last_instance.table:
-            # Obtén las claves de un diccionario de la primera entrada (si es una lista de diccionarios)
-            first_entry = last_instance.table[0]
-            fields_to_display = first_entry.keys() if isinstance(first_entry, dict) else []
-        else:
-            fields_to_display = []  # En caso de que 'table' esté vacío o sea None
-
-        return fields_to_display
-    
-
-
-@admin.register(models.Player)
-class PlayerAdmin(admin.ModelAdmin):
-    list_display = [ 'player_id', 'team_id', 'nick']
-
-
-@admin.register(models.SimplePlayer)
-class SimplePlayerAdmin(admin.ModelAdmin):
-    list_display = ['id', 'nick', 'name']
+@admin.register(models.Jornada)
+class NextGames(admin.ModelAdmin):
+    list_display = [ 'year', 'id', 'group', 'total_group', 'round',
+                    'local', 'visitor', 'league_id', 'stadium', 'team1',
+                    'team2', 'conference', 'dteam1', 'dteam2', 'numc',
+                    'no_hour', 'local_abbr', 'visitor_abbr', 'competition_name',
+                    'competition_id', 'split_league', 'type', 'type_id', 'playoffs',
+                    'group_code', 'total_rounds', 'coef', 'cflag_local', 'cflag_visitor',
+                    'local_shield', 'visitor_shield', 'extraTxt', 'schedule', 'date',
+                    'hour', 'minute', 'local_goals', 'visitor_goals', 'result',
+                    'live_minute', 'status', 'channels', 'winner', 'penaltis1', 'penaltis2' ]
