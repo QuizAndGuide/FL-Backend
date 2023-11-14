@@ -1071,3 +1071,259 @@ AttributeError: Unable to lookup 'group' on Clasificacion or ClassificationAdmin
 2023-11-01 19:25:50,996 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_legend" ADD CONSTRAINT "api_legend_pos_cd506833_pk" PRIMARY KEY ("pos")
 2023-11-03 10:31:15,837 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_table" ALTER COLUMN "type_id" TYPE string
 2023-11-03 10:31:59,690 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_table" ALTER COLUMN "type_id" TYPE string
+2023-11-14 03:53:56,068 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 04:15:39,887 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-14 04:15:40,715 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 04:20:40,622 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-14 04:20:41,341 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 04:24:00,502 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-14 04:24:01,358 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 04:27:21,190 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-14 04:27:22,002 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 04:27:40,447 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_jornada" ALTER COLUMN "local_goals" TYPE string
+2023-11-14 04:30:48,972 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_jornada" ALTER COLUMN "local_goals" TYPE string
+2023-11-14 04:32:13,294 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/migrations/0001_initial.py changed, reloading.
+2023-11-14 04:32:13,971 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 04:41:45,684 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-14 04:41:46,546 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 04:41:54,302 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_jornada" ALTER COLUMN "date" TYPE string
+2023-11-14 05:36:17,709 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-14 05:36:18,377 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 05:37:01,397 (WARNING) - django.request - Not Found: /
+2023-11-14 05:37:01,803 (WARNING) - django.request - Not Found: /favicon.ico
+2023-11-14 05:37:01,815 (WARNING) - django.request - Not Found: /apple-touch-icon-precomposed.png
+2023-11-14 05:37:01,826 (WARNING) - django.request - Not Found: /apple-touch-icon.png
+2023-11-14 05:38:31,585 (WARNING) - django.request - Not Found: /
+2023-11-14 05:38:36,238 (WARNING) - django.request - Not Found: /api/proximos_partidos
+2023-11-14 06:32:06,195 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/urls.py changed, reloading.
+2023-11-14 06:32:06,574 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 06:32:17,278 (WARNING) - django.request - Not Found: /api/proximos_partidos/
+2023-11-14 06:33:26,286 (WARNING) - django.request - Unauthorized: /api/proximos_partidos//partidos/
+2023-11-14 06:38:19,284 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/urls.py changed, reloading.
+2023-11-14 06:38:20,161 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 06:39:50,142 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/urls.py changed, reloading.
+2023-11-14 06:39:50,523 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 06:40:46,626 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/urls.py changed, reloading.
+2023-11-14 06:40:47,014 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 06:42:16,308 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 06:42:37,627 (WARNING) - djongo.sql2mongo.query - Not implemented alter command for SQL ALTER TABLE "api_jornada" ALTER COLUMN "date" TYPE string
+2023-11-14 06:43:43,924 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 06:44:05,032 (WARNING) - django.request - Not Found: /
+2023-11-14 06:44:10,936 (WARNING) - django.request - Not Found: /
+2023-11-14 06:45:14,866 (WARNING) - django.request - Not Found: /
+2023-11-14 06:45:20,331 (WARNING) - django.request - Not Found: /
+2023-11-14 06:45:40,928 (WARNING) - django.request - Not Found: /api/jornada/
+2023-11-14 06:46:29,234 (WARNING) - django.request - Not Found: /api/jornada/
+2023-11-14 06:47:20,686 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 06:47:31,475 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 06:47:46,029 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 06:49:33,747 (WARNING) - django.request - Not Found: /
+2023-11-14 06:49:42,369 (WARNING) - django.request - Not Found: /
+2023-11-14 06:49:52,344 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create/
+2023-11-14 06:58:59,487 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 06:58:59,780 (WARNING) - django.request - Not Found: /favicon.ico
+2023-11-14 07:03:07,702 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:03:11,194 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:05:35,249 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:05:37,281 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:05:40,142 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:06:47,337 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:07:21,667 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:07:23,176 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:08:01,054 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:09:13,341 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:10:59,982 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:11:02,297 (WARNING) - django.request - Unauthorized: /api/jornada/partidos/
+2023-11-14 07:11:31,446 (WARNING) - django.request - Not Found: /
+2023-11-14 07:13:12,389 (ERROR) - django.request - Internal Server Error: /admin/core/user/add/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/query.py", line 808, in __iter__
+    yield from iter(self._query)
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/query.py", line 167, in __iter__
+    yield self._align_results(doc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/query.py", line 269, in _align_results
+    if selected.table == self.left_table:
+       ^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/sql_tokens.py", line 133, in table
+    return alias2token[name].table
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 912 more times]
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/sql_tokens.py", line 130, in table
+    name = self.given_table
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/sql_tokens.py", line 141, in given_table
+    name = self._token.get_real_name()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/sql.py", line 361, in get_real_name
+    return self._get_first_name(dot_idx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/sql.py", line 386, in _get_first_name
+    return token.get_name()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/sql.py", line 355, in get_name
+    return self.get_alias() or self.get_real_name()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/sql.py", line 344, in get_alias
+    _, ws = self.token_next_by(t=T.Whitespace)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/sql.py", line 244, in token_next_by
+    return self._token_matching(funcs, idx, end)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/sql.py", line 223, in _token_matching
+    if func(token):
+       ^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/sql.py", line 242, in <lambda>
+    funcs = lambda tk: imt(tk, i, m, t)
+                       ^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/utils.py", line 100, in imt
+    elif types and any(token.ttype in ttype for ttype in types):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/utils.py", line 100, in <genexpr>
+    elif types and any(token.ttype in ttype for ttype in types):
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/sqlparse/tokens.py", line 19, in __contains__
+    return item is not None and (self is item or item[:len(self)] == self)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded in comparison
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/cursor.py", line 76, in fetchone
+    return self.result.next()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/query.py", line 797, in __next__
+    result = next(self._result_generator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/sql2mongo/query.py", line 830, in __iter__
+    raise exe from e
+djongo.exceptions.SQLDecodeError: 
+
+	Keyword: FAILED SQL: SELECT %(0)s AS "a" FROM "core_user" WHERE "core_user"."username" = %(1)s LIMIT 1
+Params: (1, 'ric')
+Version: 1.3.6
+	Sub SQL: None
+	FAILED SQL: None
+	Params: None
+	Version: None
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/cursor.py", line 81, in fetchone
+    raise db_exe from e
+djongo.database.DatabaseError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/auth/admin.py", line 119, in add_view
+    return self._add_view(request, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/auth/admin.py", line 147, in _add_view
+    return super().add_view(request, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1891, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1751, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/admin/options.py", line 1797, in _changeform_view
+    form_validated = form.is_valid()
+                     ^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/forms/forms.py", line 205, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/forms/forms.py", line 200, in errors
+    self.full_clean()
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/forms/forms.py", line 439, in full_clean
+    self._post_clean()
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/contrib/auth/forms.py", line 129, in _post_clean
+    super()._post_clean()
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/forms/models.py", line 498, in _post_clean
+    self.validate_unique()
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/forms/models.py", line 507, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/base.py", line 1207, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/base.py", line 1317, in _perform_unique_checks
+    if qs.exists():
+       ^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/query.py", line 1226, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/sql/query.py", line 592, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1366, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1409, in execute_sql
+    val = cursor.fetchone()
+          ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/utils.py", line 97, in inner
+    with self:
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/cursor.py", line 81, in fetchone
+    raise db_exe from e
+django.db.utils.DatabaseError
+2023-11-14 07:17:28,454 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-14 07:17:28,892 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 07:25:54,998 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-14 07:25:55,437 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 07:26:18,271 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-14 07:26:19,126 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 07:27:00,389 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-14 07:27:01,244 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

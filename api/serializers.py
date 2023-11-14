@@ -18,6 +18,10 @@ class ProfileSerializer(serializers.ModelSerializer):
 
 
 class JornadaSerializer(serializers.ModelSerializer):
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation['date'] = instance.date.strftime('%Y-%m-%d')
+        return representation
     class Meta:
         model = Jornada
         fields = [ 'year', 'id', 'group', 'total_group', 'round',
@@ -29,6 +33,18 @@ class JornadaSerializer(serializers.ModelSerializer):
                     'local_shield', 'visitor_shield', 'extraTxt', 'schedule', 'date',
                     'hour', 'minute', 'local_goals', 'visitor_goals', 'result',
                     'live_minute', 'status', 'channels', 'winner', 'penaltis1', 'penaltis2' ]
-        ordering = ['schedule']
+        ordering = ['-schedule']
+        
+        
+        
+class PartidosSerializer(serializers.ModelSerializer):
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation['date'] = instance.date.strftime('%Y-%m-%d')
+        return representation
+    class Meta:
+        model = Jornada
+        fields = [ 'local', 'visitor', 'schedule' ]
+        ordering = ['-schedule']
         
 

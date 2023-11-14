@@ -5,7 +5,7 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register('profile', views.ProfileViewSet)
-router.register('proximos_partidos', views.JornadaViewSet, basename='proximos_partidos')
+router.register('jornada', views.JornadaViewSet, basename='partidos')
 
 
 urlpatterns = router.urls

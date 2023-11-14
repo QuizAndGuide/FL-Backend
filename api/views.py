@@ -8,7 +8,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
 from datetime import datetime
 from .models import Profile, Jornada
-from .serializers import ProfileSerializer, JornadaSerializer
+from .serializers import ProfileSerializer, JornadaSerializer, PartidosSerializer
 from .permissions import *
 from rest_framework.exceptions import NotFound
 
@@ -38,11 +38,10 @@ class ProfileViewSet(viewsets.ModelViewSet):
 
 
 class JornadaViewSet(viewsets.ViewSet):
-    authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
 
     @action(detail=False, methods=['get'])
     def partidos(self, request):
         proximos_partidos = Jornada.objects.filter(schedule__gte=datetime.now()).order_by('schedule')[:3]
-        serializer = JornadaSerializer(proximos_partidos, many=True)        
+        serializer = PartidosSerializer(proximos_partidos, many=True)        
         return Response(serializer.data)
