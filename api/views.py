@@ -8,7 +8,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
 from datetime import datetime
 from .models import Profile, Jornada, Stats
-from .serializers import ProfileSerializer, JornadaSerializer, PartidosSerializer, MaxGoalers
+from .serializers import ProfileSerializer, PartidosSerializer, MaxGoalersSerializer
 from .permissions import *
 from rest_framework.exceptions import NotFound
 
@@ -52,6 +52,6 @@ class MaxGoalersViewSet(viewsets.ViewSet):
     @action(detail=False, methods=['get'])
     def max_goalers(self, request):
         max_goalers = Stats.objects.all().order_by('-goals')[:3]
-        serializer = MaxGoalers(max_goalers, many=True)
+        serializer = MaxGoalersSerializer(max_goalers, many=True)
         
         return Response(serializer.data)

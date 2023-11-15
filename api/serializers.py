@@ -44,7 +44,7 @@ class PartidosSerializer(serializers.ModelSerializer):
         return representation
     class Meta:
         model = Jornada
-        fields = [ 'local', 'visitor', 'schedule' ]
+        fields = [ 'local', 'local_shield', 'visitor', 'visitor_shield', 'schedule' ]
         ordering = ['-schedule']
         
         
@@ -54,11 +54,11 @@ class StatsSerializer(serializers.ModelSerializer):
         model = Stats
         fields = '__all__'
 
-class MaxGoalers(serializers.ModelSerializer):
+class MaxGoalersSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Stats
-        fields = ['nick', 'team_name', 'goals']
+        fields = ['nick', 'player_image', 'team_name', 'goals']
         
         
 # class AgendaSerializer(serializers.ModelSerializer):
