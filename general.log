@@ -1327,3 +1327,15 @@ django.db.utils.DatabaseError
 2023-11-14 07:26:19,126 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2023-11-14 07:27:00,389 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
 2023-11-14 07:27:01,244 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 07:40:29,642 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/migrations/0002_initial.py changed, reloading.
+2023-11-14 07:40:29,931 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 07:40:52,729 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/football_quiz/settings.py changed, reloading.
+2023-11-14 07:40:53,545 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 16:23:47,608 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-14 16:23:48,459 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-14 16:23:49,705 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-14 16:23:50,354 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-15 12:52:31,491 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/football_quiz/settings.py changed, reloading.
+2023-11-15 12:52:32,354 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-15 12:55:44,118 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-15 12:55:44,955 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

@@ -1,7 +1,7 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Profile, Jornada
+from .models import Profile, Jornada, Agenda
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -48,3 +48,8 @@ class PartidosSerializer(serializers.ModelSerializer):
         ordering = ['-schedule']
         
 
+class AgendaSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Agenda
+        fields = '__all__'

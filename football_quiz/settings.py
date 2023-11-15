@@ -55,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'football_quiz.urls'
@@ -85,7 +86,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'apifutbol_db',  # Your MongoDB database name
-        'ENFORCE_SCHEMA': True,
+        'ENFORCE_SCHEMA': False,
     }
 }
 # DATABASES = {

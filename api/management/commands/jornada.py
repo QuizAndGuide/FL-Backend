@@ -9,7 +9,7 @@ class Command(BaseCommand):
     help = 'debería guardar información simple de los jugadores de un equipo'
 
     def handle(self, *args, **kwargs):
-        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1&round=14"
+        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1"
 
 
         try:
