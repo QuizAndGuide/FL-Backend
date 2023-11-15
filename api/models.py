@@ -95,7 +95,7 @@ class Jornada(models.Model):
 
 class Stats(models.Model):
     player_id = models.IntegerField()
-    nick = models.CharField(max_length=30), 
+    nick = models.CharField(max_length=30) 
     name = models.CharField(max_length=255) 
     role = models.IntegerField()
     flag = models.CharField(max_length=2)

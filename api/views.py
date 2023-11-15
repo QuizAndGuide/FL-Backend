@@ -7,10 +7,11 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action
 from datetime import datetime
-from .models import Profile, Jornada
-from .serializers import ProfileSerializer, JornadaSerializer, PartidosSerializer
+from .models import Profile, Jornada, Stats
+from .serializers import ProfileSerializer, JornadaSerializer, PartidosSerializer, MaxGoalers
 from .permissions import *
 from rest_framework.exceptions import NotFound
+
 
 class ProfileViewSet(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
@@ -34,8 +35,6 @@ class ProfileViewSet(viewsets.ModelViewSet):
             serializer.save()
             return Response(serializer.data)
 
-    
-
 
 class JornadaViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
@@ -44,4 +43,15 @@ class JornadaViewSet(viewsets.ViewSet):
     def partidos(self, request):
         proximos_partidos = Jornada.objects.filter(schedule__gte=datetime.now()).order_by('schedule')[:3]
         serializer = PartidosSerializer(proximos_partidos, many=True)        
+        return Response(serializer.data)
+
+
+class MaxGoalersViewSet(viewsets.ViewSet):
+    permission_classes = [IsAuthenticated]
+
+    @action(detail=False, methods=['get'])
+    def max_goalers(self, request):
+        max_goalers = Stats.objects.all().order_by('-goals')[:3]
+        serializer = MaxGoalers(max_goalers, many=True)
+        
         return Response(serializer.data)

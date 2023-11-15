@@ -20,7 +20,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 class JornadaSerializer(serializers.ModelSerializer):
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation['date'] = instance.date.strftime('%Y-%m-%d')
+        representation['date'] = instance.date.strftime('%Y/%m/%d')
         return representation
     class Meta:
         model = Jornada
@@ -40,7 +40,7 @@ class JornadaSerializer(serializers.ModelSerializer):
 class PartidosSerializer(serializers.ModelSerializer):
     def to_representation(self, instance):
         representation = super().to_representation(instance)
-        representation['date'] = instance.date.strftime('%Y-%m-%d')
+        representation['date'] = instance.date.strftime('%Y/%m/%d')
         return representation
     class Meta:
         model = Jornada
@@ -53,6 +53,12 @@ class StatsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stats
         fields = '__all__'
+
+class MaxGoalers(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Stats
+        fields = ['nick', 'team_name', 'goals']
         
         
 # class AgendaSerializer(serializers.ModelSerializer):
