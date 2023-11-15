@@ -95,21 +95,21 @@ class Jornada(models.Model):
 
 class Stats(models.Model):
     player_id = models.IntegerField()
-    nick = models.CharField(max_length=25), 
+    nick = models.CharField(max_length=30), 
     name = models.CharField(max_length=255) 
     role = models.IntegerField()
     flag = models.CharField(max_length=2)
-    last_name = models.CharField(max_length=15)
+    last_name = models.CharField(max_length=255)
     team_id = models.IntegerField()
     cc = models.CharField(max_length=2)
-    team_name = models.CharField(max_length=15)
+    team_name = models.CharField(max_length=30)
     goals = models.IntegerField(blank=True, null=True)
     yellow_cards = models.IntegerField(blank=True, null=True)
     red_cards = models.IntegerField(blank=True, null=True)
     asists = models.IntegerField(blank=True, null=True)
     year = models.IntegerField()
     player_alias = models.CharField(max_length=30)
-    team_alias = models.CharField(max_length=15)
+    team_alias = models.CharField(max_length=30)
     team_shield = models.URLField()
     player_image = models.URLField()
     team_flag = models.URLField()
