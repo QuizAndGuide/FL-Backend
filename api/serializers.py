@@ -1,7 +1,7 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Profile, Jornada, Agenda
+from .models import Profile, Jornada, Stats
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -47,9 +47,16 @@ class PartidosSerializer(serializers.ModelSerializer):
         fields = [ 'local', 'visitor', 'schedule' ]
         ordering = ['-schedule']
         
-
-class AgendaSerializer(serializers.ModelSerializer):
-
+        
+class StatsSerializer(serializers.ModelSerializer):
+    
     class Meta:
-        model = Agenda
+        model = Stats
         fields = '__all__'
+        
+        
+# class AgendaSerializer(serializers.ModelSerializer):
+
+#     class Meta:
+#         model = Agenda
+#         fields = '__all__'

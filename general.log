@@ -1339,3 +1339,13 @@ django.db.utils.DatabaseError
 2023-11-15 12:52:32,354 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2023-11-15 12:55:44,118 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
 2023-11-15 12:55:44,955 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-15 14:40:46,360 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-15 14:40:47,184 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-15 14:40:49,352 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-15 14:40:49,565 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-15 14:42:54,133 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-15 14:42:54,543 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-15 14:43:09,123 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-15 14:43:09,484 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-15 14:43:37,476 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/models.py changed, reloading.
+2023-11-15 14:43:38,178 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
