@@ -5,10 +5,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.authentication import TokenAuthentication
-from rest_framework.decorators import action
+from rest_framework.decorators import action, permission_classes
 from datetime import datetime
-from .models import Profile, Jornada, Stats
-from .serializers import ProfileSerializer, PartidosSerializer, MaxGoalersSerializer
+from .models import Profile, Round, Stats
+from .serializers import ProfileSerializer, MatchesSerializer, MaxGoalersSerializer
 from .permissions import *
 from rest_framework.exceptions import NotFound
 
@@ -36,22 +36,36 @@ class ProfileViewSet(viewsets.ModelViewSet):
             return Response(serializer.data)
 
 
-class JornadaViewSet(viewsets.ViewSet):
-    permission_classes = [IsAuthenticated]
+# class JornadaViewSet(viewsets.ViewSet):
+#     permission_classes = [IsAuthenticated]
 
-    @action(detail=False, methods=['get'])
-    def partidos(self, request):
-        proximos_partidos = Jornada.objects.filter(schedule__gte=datetime.now()).order_by('schedule')[:3]
-        serializer = PartidosSerializer(proximos_partidos, many=True)        
+#     @action(detail=False, methods=['get'])
+#     def matches(self, request):
+#         proximos_partidos = Jornada.objects.filter(schedule__gte=datetime.now()).order_by('schedule')[:3]
+#         serializer = MatchesSerializer(proximos_partidos, many=True)        
+#         return Response(serializer.data)
+
+
+# class MaxGoalersViewSet(viewsets.ViewSet):
+#     permission_classes = [IsAuthenticated]
+
+#     @action(detail=False, methods=['get'])
+#     def max_goalers(self, request):
+#         max_goalers = Stats.objects.all().order_by('-goals')[:3]
+#         serializer = MaxGoalersSerializer(max_goalers, many=True)
+        
+#         return Response(serializer.data)
+@permission_classes([IsAuthenticated])
+class NextMatchesView(APIView):
+    def get(self, request, format=None):
+        next_matches = Round.objects.filter(schedule__gte=datetime.now()).order_by('schedule')[:3]
+        serializer = MatchesSerializer(next_matches, many=True)        
         return Response(serializer.data)
-
-
-class MaxGoalersViewSet(viewsets.ViewSet):
-    permission_classes = [IsAuthenticated]
-
-    @action(detail=False, methods=['get'])
-    def max_goalers(self, request):
+    
+    
+@permission_classes([IsAuthenticated])
+class MaxGoalersView(APIView):
+    def get(self, request, format=None):
         max_goalers = Stats.objects.all().order_by('-goals')[:3]
         serializer = MaxGoalersSerializer(max_goalers, many=True)
-        
         return Response(serializer.data)

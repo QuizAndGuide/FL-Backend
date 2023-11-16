@@ -1,7 +1,7 @@
 import requests
 from django.core.management.base import BaseCommand
-from api.serializers import JornadaSerializer
-from api.models import Jornada
+from api.serializers import RoundSerializer
+from api.models import Round
 import json
 
 class Command(BaseCommand):

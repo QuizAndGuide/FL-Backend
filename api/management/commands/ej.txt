@@ -1,0 +1,25 @@
+import requests
+
+api_key = "c6196c01e7c1d93932590f42beec9ef8"
+base_url = "https://apiclient.besoccerapps.com/scripts/api/api.php"
+
+# Define parameters
+params = {
+    'key': api_key,
+    'format': 'json',
+    'req': 'matchs',
+    'league': 1,
+    # Add any additional parameters as needed, e.g., 'round': 14
+}
+
+# Make the GET request
+response = requests.get(base_url, params=params)
+
+# Check the response
+if response.status_code == 200:
+    # Print the response content
+    print(response.text)
+else:
+    # Print the error message if the request was not successful
+    print(f"Error: {response.status_code}")
+    print(response.text)

@@ -44,9 +44,9 @@ class Profile(models.Model):
 
 
     
-class Jornada(models.Model):
-    year = models.IntegerField()
+class Round(models.Model):
     id = models.IntegerField(primary_key=True)
+    year = models.IntegerField()
     group = models.IntegerField()
     total_group = models.IntegerField()
     round = models.IntegerField()

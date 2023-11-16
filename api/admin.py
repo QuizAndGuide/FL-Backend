@@ -17,7 +17,7 @@ class ProfileAdmin(admin.ModelAdmin):
     search_fields = ['first_name__istartswith', 'last_name__istartswith']
 
    
-@admin.register(models.Jornada)
+@admin.register(models.Round)
 class NextGames(admin.ModelAdmin):
     list_display = [ 'year', 'id', 'group', 'total_group', 'round',
                     'local', 'visitor', 'league_id', 'stadium', 'team1',

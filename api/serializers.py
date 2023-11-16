@@ -1,7 +1,7 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Profile, Jornada, Stats
+from .models import Profile, Round, Stats
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -17,14 +17,25 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = ['id', 'user_id', 'phone', 'birth_date', 'membership']
 
 
-class JornadaSerializer(serializers.ModelSerializer):
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['date'] = instance.date.strftime('%Y/%m/%d')
-        return representation
+class RoundSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Jornada
-        fields = [ 'year', 'id', 'group', 'total_group', 'round',
+        model = Round
+        fields = [  'id','year', 'group', 'total_group', 'round',
+                    'local', 'visitor', 'league_id', 'stadium', 'team1',
+                    'team2', 'conference', 'dteam1', 'dteam2', 'numc',
+                    'no_hour', 'local_abbr', 'visitor_abbr', 'competition_name',
+                    'competition_id', 'split_league', 'type', 'type_id', 'playoffs',
+                    'group_code', 'total_rounds', 'coef', 'cflag_local', 'cflag_visitor',
+                    'local_shield', 'visitor_shield', 'extraTxt', 'schedule', 'date',
+                    'hour', 'minute', 'local_goals', 'visitor_goals', 'result',
+                    'live_minute', 'status', 'channels', 'winner', 'penaltis1', 'penaltis2' ]
+        ordering = ['-schedule']
+        
+        
+class RoundUpdaterSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Round
+        fields = [  'year', 'group', 'total_group', 'round',
                     'local', 'visitor', 'league_id', 'stadium', 'team1',
                     'team2', 'conference', 'dteam1', 'dteam2', 'numc',
                     'no_hour', 'local_abbr', 'visitor_abbr', 'competition_name',
@@ -37,13 +48,9 @@ class JornadaSerializer(serializers.ModelSerializer):
         
         
         
-class PartidosSerializer(serializers.ModelSerializer):
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['date'] = instance.date.strftime('%Y/%m/%d')
-        return representation
+class MatchesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Jornada
+        model = Round
         fields = [ 'local', 'local_shield', 'visitor', 'visitor_shield', 'schedule' ]
         ordering = ['-schedule']
         

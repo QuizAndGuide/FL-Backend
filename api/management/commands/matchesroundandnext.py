@@ -1,7 +1,7 @@
 import requests
 from django.core.management.base import BaseCommand
-from api.serializers import JornadaSerializer
-from api.models import Jornada
+from api.serializers import RoundSerializer
+from api.models import Round
 import json
 from datetime import datetime, date
 
@@ -26,7 +26,7 @@ class Command(BaseCommand):
                     # Serializar y guardar todos los elementos de la lista 'match'
                     for item in match_list:
                         round_value = item.get('round')
-                        existing_record = Jornada.objects.filter(round=round_value).first()
+                        existing_record = Round.objects.filter(round=round_value).first()
                         item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
                         # Verificar si la fecha es futura
                         match_date_str = item.get('schedule')
@@ -35,7 +35,7 @@ class Command(BaseCommand):
                             future_dates_count += 1
 
                         # Serializar y guardar los datos del elemento actual
-                        serializer = JornadaSerializer(existing_record, data=item)
+                        serializer = RoundSerializer(existing_record, data=item)
                         if serializer.is_valid():
                             serializer.save()
                             self.stdout.write("Record updated or created successfully.")
@@ -58,7 +58,7 @@ class Command(BaseCommand):
 
                             # Serializar y guardar los datos de la nueva solicitud
                             for new_item in new_match_list:
-                                serializer = JornadaSerializer(existing_record, data=new_item)
+                                serializer = RoundSerializer(existing_record, data=new_item)
                                 if serializer.is_valid():
                                     serializer.save()
                                     self.stdout.write("Record updated or created successfully.")
@@ -77,8 +77,8 @@ class Command(BaseCommand):
 
 import requests
 from django.core.management.base import BaseCommand
-from api.serializers import JornadaSerializer
-from api.models import Jornada
+from api.serializers import RoundSerializer
+from api.models import Round
 import json
 
 class Command(BaseCommand):
@@ -104,11 +104,12 @@ class Command(BaseCommand):
 
                             # Serializar y guardar todos los elementos de la lista 'match'
                             for item in match_list:
+                                item['match_id'] = item.pop('id')
                                 item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
-                                existing_record = Jornada.objects.filter(round=round).first()
+                                existing_record = Round.objects.filter(round=round).first()
 
                                 # Serializar y guardar los datos del elemento actual
-                                serializer = JornadaSerializer(existing_record, data=item)
+                                serializer = RoundSerializer(existing_record, data=item)
                                 if serializer.is_valid():
                                     serializer.save()
                                     self.stdout.write("Record updated or created successfully.")
