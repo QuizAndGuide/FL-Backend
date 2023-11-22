@@ -3,13 +3,13 @@ import json
 import requests
 from django.core.management.base import BaseCommand
 from api.models import Round
-from api.serializers import RoundSerializer, RoundUpdaterSerializer
+from api.serializers import RoundSerializer, RoundUpdateSerializer
 
 class Command(BaseCommand):
     help = 'obtiene la informacion de los partidos de la jornada en curso'
 
     def handle(self, *args, **kwargs):
-        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1"
+        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1&round=14"
 
         try:
             response = requests.get(url)
@@ -33,7 +33,7 @@ class Command(BaseCommand):
                     # Serializar y guardar o actualizar todos los elementos de la lista 'table'
                         for item in match:
                             item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
-                            serializer = RoundUpdaterSerializer(existing_record, data=item)
+                            serializer = RoundUpdateSerializer(existing_record, data=item)
                             if serializer.is_valid():
                                 serializer.save()
                                 self.stdout.write("Registro actualizado.")

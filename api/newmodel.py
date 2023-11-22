@@ -319,3 +319,29 @@ class Table(models.Model):
     
     def __str__(self):
         return self.basealias
+    
+    
+    class MonthMatches(models.Model):
+        id = models.IntegerField(primary_key=True)
+        team1 = models.IntegerField()
+        team2 = models.IntegerField()
+        r1 = models.SmallIntegerField()
+        r2 = models.SmallIntegerField()
+        p1 = models.IntegerField()
+        p2 = models.IntegerField()
+        status = models.IntegerField()
+        round = models.IntegerField()
+        shedule = models.DateTimeField()
+        league_id = models.IntegerField()
+        t1 = models.CharField(max_length=20)
+        t2 = models.CharField(max_length=20)
+        id_t1 = models.IntegerField()
+        id_t2 = models.IntegerField()
+        finished = models.SmallIntegerField()
+        t1_short = models.CharField(max_length=3)
+        t2_short = models.CharField(max_length=3)
+        group_code = models.SmallIntegerField()
+        categoryId = models.SmallIntegerField()
+        year = models.IntegerField()
+        cc1 = models.CharField(max_length=2)
+        cc2 = models.CharField(max_length=2)

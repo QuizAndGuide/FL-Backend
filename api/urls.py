@@ -9,7 +9,8 @@ router.register('profile', ProfileViewSet)
 # router.register('stats', views.MaxGoalersViewSet, basename='goalers')
 
 urlpatterns = [
-    path('matches/', NextMatchesView.as_view(), name='partidos'),
+    path('nextmatches/', NextMatchesView.as_view(), name='proximos partidos'),
+    path('lastmatches/', LastMatchesView.as_view(), name='ultimos partidos'),
     path('goalers/', MaxGoalersView.as_view(), name='scorers'),
 ]
 urlpatterns += router.urls

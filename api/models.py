@@ -42,9 +42,34 @@ class Profile(models.Model):
             ('view_history', 'Can view history')
         ]
 
+class MonthMatches(models.Model):
+    # id = models.OneToOneField('Round', primary_key=True, on_delete=models.CASCADE)
+    id = models.IntegerField(primary_key=True)
+    team1 = models.IntegerField()
+    team2 = models.IntegerField()
+    r1 = models.SmallIntegerField()
+    r2 = models.SmallIntegerField()
+    p1 = models.IntegerField()
+    p2 = models.IntegerField()
+    status = models.IntegerField()
+    round = models.IntegerField()
+    schedule = models.DateTimeField()
+    league_id = models.IntegerField()
+    t1 = models.CharField(max_length=20)
+    t2 = models.CharField(max_length=20)
+    id_t1 = models.IntegerField()
+    id_t2 = models.IntegerField()
+    finished = models.SmallIntegerField()
+    t1_short = models.CharField(max_length=3)
+    t2_short = models.CharField(max_length=3)
+    group_code = models.SmallIntegerField()
+    categoryId = models.SmallIntegerField()
+    year = models.IntegerField()
+    cc1 = models.CharField(max_length=2)
+    cc2 = models.CharField(max_length=2)
 
-    
 class Round(models.Model):
+    # id = models.OneToOneField(MonthMatches, primary_key=True, on_delete=models.CASCADE)
     id = models.IntegerField(primary_key=True)
     year = models.IntegerField()
     group = models.IntegerField()
@@ -114,23 +139,3 @@ class Stats(models.Model):
     player_image = models.URLField()
     team_flag = models.URLField()
 
-# class Goleadores(models.Model):
-#     player_id = models.IntegerField()
-#     nick = models.CharField(max_length=25), 
-#     name = models.CharField(max_length=255) 
-#     role = models.IntegerField()
-#     flag = models.CharField(max_length=2)
-#     last_name = models.CharField(max_length=15)
-#     team_id = models.IntegerField()
-#     cc = models.CharField(max_length=2)
-#     team_name = models.CharField(max_length=15)
-#     total = models.IntegerField(blank=True, null=True)
-#     year = models.IntegerField()
-#     player_alias = models.CharField(max_length=30)
-#     team_alias = models.CharField(max_length=15)
-#     team_shield = models.URLField()
-#     player_image = models.URLField()
-#     team_flag = models.URLField()
-
-# class Agenda(models.Model):
-#     Agenda = models.JSONField()
