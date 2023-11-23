@@ -42,6 +42,12 @@ class Profile(models.Model):
             ('view_history', 'Can view history')
         ]
 
+
+class Match(models.Model):
+    id = models.man(primary_key=True)
+    schedule
+
+
 class MonthMatch(models.Model):
     # id = models.OneToOneField('Round', primary_key=True, on_delete=models.CASCADE)
     id = models.IntegerField(primary_key=True)
@@ -68,8 +74,8 @@ class MonthMatch(models.Model):
     cc1 = models.CharField(max_length=2)
     cc2 = models.CharField(max_length=2)
 
-class RoundMatch(models.Model):
-    # id = models.OneToOneField(MonthMatch, primary_key=True, on_delete=models.CASCADE)
+class RoundMathc(models.Model):
+    # id = models.OneToOneField(MonthMatches, primary_key=True, on_delete=models.CASCADE)
     id = models.IntegerField(primary_key=True)
     year = models.IntegerField()
     group = models.IntegerField()
@@ -138,4 +144,8 @@ class Stats(models.Model):
     team_shield = models.URLField()
     player_image = models.URLField()
     team_flag = models.URLField()
+
+
+
+
 

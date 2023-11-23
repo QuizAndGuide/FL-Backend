@@ -7,8 +7,8 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action, permission_classes
 from datetime import datetime
-from .models import Profile, Round, Stats
-from .serializers import ProfileSerializer, MatchesSerializer, MaxGoalersSerializer, LastMatchesSerializer
+from .models import Profile, RoundMatch, Stats
+from .serializers import ProfileSerializer, RoundMatchSerializer, MaxGoalersSerializer
 from .permissions import *
 from rest_framework.exceptions import NotFound
 
@@ -58,16 +58,17 @@ class ProfileViewSet(viewsets.ModelViewSet):
 @permission_classes([IsAuthenticated])
 class NextMatchesView(APIView):
     def get(self, request, format=None):
-        next_matches = Round.objects.filter(status__gt=1).order_by('schedule')[:3]
-        serializer = MatchesSerializer(next_matches, many=True)        
+        next_matches = RoundMatch.objects.filter(status=-1).order_by('schedule')
+        serializer = RoundMatchSerializer(next_matches, many=True)        
         return Response(serializer.data)
     
     
 @permission_classes([IsAuthenticated])
 class LastMatchesView(APIView):
     def get(self, request, format=None):
-        next_matches = Round.objects.filter(status=-1).order_by('schedule')[:3]
-        serializer = LastMatchesSerializer(next_matches, many=True)        
+        last_matches = RoundMatch.objects.filter(status=1).order_by('-schedule')
+        print(last_matches)
+        serializer = RoundMatchSerializer(last_matches, many=True)        
         return Response(serializer.data)
     
     

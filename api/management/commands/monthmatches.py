@@ -1,7 +1,7 @@
 import requests
 from django.core.management.base import BaseCommand
 from api.serializers import MonthMatchesinputSerializer, MonthMatchesUpdateSerializer
-from api.models import Round
+from api.models import RoundMatch
 from datetime import datetime
 import json
 
@@ -32,7 +32,7 @@ class Command(BaseCommand):
                 if matches_list:
                     for item in matches_list:
                         id = item.get('id')
-                        existing_record = Round.objects.filter(id=id)
+                        existing_record = RoundMatch.objects.filter(id=id)
                             # Cambia esta línea para mantener 'date' como 'date' en lugar de convertirlo a 'datetime'
                         # item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
                         if existing_record:

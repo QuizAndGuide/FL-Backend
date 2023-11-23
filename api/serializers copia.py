@@ -17,37 +17,40 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = ['id', 'user_id', 'phone', 'birth_date', 'membership']
 
 
-from datetime import datetime
-
-from rest_framework import serializers
-from datetime import datetime
-
-class RoundMatchSerializer(serializers.ModelSerializer):
-    
+class RoundSerializer(serializers.ModelSerializer):
     class Meta:
         model = RoundMatch
         fields = '__all__'
         ordering = ['-schedule']
-
-    def to_internal_value(self, data):
-        if 'date' in data:
-            data['date'] = datetime.strptime(data['date'], '%Y/%m/%d').date()
-        return super().to_internal_value(data)
-
-    def to_representation(self, instance):
-        if instance.status == -1:
-            fields = ['local', 'local_shield', 'visitor', 'visitor_shield', 'schedule']
-        elif instance.status == 1:
-            fields = ['local', 'local_shield', 'visitor', 'visitor_shield', 'date', 'result']
-        else:
-            fields = []
-
-        ret = {}
-        for field in fields:
-            ret[field] = getattr(instance, field)
-
-        return ret
-
+        
+        
+class RoundUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RoundMatch
+        fields = [  'year', 'group', 'total_group', 'round',
+                    'local', 'visitor', 'league_id', 'stadium', 'team1',
+                    'team2', 'conference', 'dteam1', 'dteam2', 'numc',
+                    'no_hour', 'local_abbr', 'visitor_abbr', 'competition_name',
+                    'competition_id', 'split_league', 'type', 'type_id', 'playoffs',
+                    'group_code', 'total_rounds', 'coef', 'cflag_local', 'cflag_visitor',
+                    'local_shield', 'visitor_shield', 'extraTxt', 'schedule', 'date',
+                    'hour', 'minute', 'local_goals', 'visitor_goals', 'result',
+                    'live_minute', 'status', 'channels', 'winner', 'penaltis1', 'penaltis2' ]
+        ordering = ['-schedule']
+        
+        
+        
+class MatchesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RoundMatch
+        fields = ['local', 'local_shield', 'visitor', 'visitor_shield', 'schedule']
+        ordering = ['-schedule']
+        
+class LastMatchesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RoundMatch
+        fields = ['local', 'local_shield', 'visitor', 'visitor_shield', 'date', 'result' ]
+        
         
 class StatsSerializer(serializers.ModelSerializer):
     
@@ -85,3 +88,12 @@ class NextMonthMatchesSerializer(serializers.ModelSerializer):
         model = MonthMatch
         fields = ['team1', 'team2', 'shedule']
         
+        
+        
+        
+        
+        
+        
+        
+  # Determina qué campo incluir en función del valor de 'status'
+  

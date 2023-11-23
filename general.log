@@ -1809,3 +1809,30 @@ TypeError: Object of type CharField is not JSON serializable
 2023-11-16 21:12:28,657 (WARNING) - django.request - Not Found: /apple-touch-icon.png
 2023-11-16 21:12:28,722 (WARNING) - django.request - Not Found: /
 2023-11-16 21:12:53,589 (WARNING) - django.request - Unauthorized: /api/matches/
+2023-11-23 08:04:33,719 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:05:05,041 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
+2023-11-23 08:05:05,391 (WARNING) - django.request - Not Found: /favicon.ico
+2023-11-23 08:06:28,009 (WARNING) - django.request - Not Found: /api/jornada/partidos/
+2023-11-23 08:12:39,455 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-23 08:12:39,854 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:14:09,183 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 08:14:09,580 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:19:13,415 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 08:19:13,815 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:23:48,329 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 08:23:48,728 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:25:03,124 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 08:25:03,838 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:27:26,108 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 08:27:26,596 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:30:09,585 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-23 08:30:10,429 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:31:19,462 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:31:37,119 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-23 08:31:37,449 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:33:38,690 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/migrations/0001_initial.py changed, reloading.
+2023-11-23 08:33:38,965 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:39:28,286 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-23 08:39:28,673 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 08:46:58,365 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 08:46:58,830 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
