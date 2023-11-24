@@ -8,7 +8,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action, permission_classes
 from datetime import datetime
 from .models import Profile, RoundMatch, Stats
-from .serializers import ProfileSerializer, RoundMatchSerializer, MaxGoalersSerializer
+from .serializers import ProfileSerializer, RoundMatchSerializer, StatsSerializer
 from .permissions import *
 from rest_framework.exceptions import NotFound
 
@@ -75,6 +75,6 @@ class LastMatchesView(APIView):
 @permission_classes([IsAuthenticated])
 class MaxGoalersView(APIView):
     def get(self, request, format=None):
-        max_goalers = Stats.objects.all().order_by('-goals')[:3]
-        serializer = MaxGoalersSerializer(max_goalers, many=True)
+        max_goalers = Stats.objects.all().order_by('-goals')
+        serializer = StatsSerializer(max_goalers, many=True)
         return Response(serializer.data)

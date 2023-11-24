@@ -2,6 +2,7 @@ from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import Profile, RoundMatch, Stats, MonthMatch
+from datetime import datetime
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -17,10 +18,6 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = ['id', 'user_id', 'phone', 'birth_date', 'membership']
 
 
-from datetime import datetime
-
-from rest_framework import serializers
-from datetime import datetime
 
 class RoundMatchSerializer(serializers.ModelSerializer):
     
@@ -55,11 +52,13 @@ class StatsSerializer(serializers.ModelSerializer):
         model = Stats
         fields = '__all__'
 
-class MaxGoalersSerializer(serializers.ModelSerializer):
-    
-    class Meta:
-        model = Stats
-        fields = ['nick', 'player_image', 'team_name', 'goals']
+    def to_representation(self, instance):    
+        fields = ['nick', 'player_image', 'team_name', 'team_shield', 'goals']
+        ret = {}
+        for field in fields:
+            ret[field] = getattr(instance, field)
+
+        return ret
         
         
 class MonthMatchesinputSerializer(serializers.ModelSerializer):

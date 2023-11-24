@@ -45,7 +45,7 @@ class Profile(models.Model):
 
 class Match(models.Model):
     id = models.man(primary_key=True)
-    schedule
+    # schedule
 
 
 class MonthMatch(models.Model):

@@ -36,8 +36,8 @@ class Command(BaseCommand):
                             # Cambia esta línea para mantener 'date' como 'date' en lugar de convertirlo a 'datetime'
                         # item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
                         if existing_record:
-                            # Serializar y guardar o actualizar todos los elementos de la lista 'table'
-                            serializer = MonthMatchesUpdateSerializer(existing_record, data=item)
+                            existing_record.delete()
+                            serializer = MonthMatchesUpdateSerializer(data=item)
                             if serializer.is_valid():
                                 serializer.save()
                                 self.stdout.write("Registro actualizado.")

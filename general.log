@@ -1836,3 +1836,59 @@ TypeError: Object of type CharField is not JSON serializable
 2023-11-23 08:39:28,673 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2023-11-23 08:46:58,365 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
 2023-11-23 08:46:58,830 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 12:32:06,736 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 12:32:07,191 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 12:33:02,879 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-23 12:33:03,269 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 12:35:27,976 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/serializers.py changed, reloading.
+2023-11-23 12:35:28,566 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-11-23 12:35:40,693 (ERROR) - django.request - Internal Server Error: /api/profile/
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/renderers.py", line 654, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/renderers.py", line 562, in get_raw_data_form
+    data = serializer.data.copy()
+           ^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 257, in data
+    self._data = self.get_initial()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+                 ^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `phone` is not valid for model `Profile`.
+2023-11-23 12:35:59,295 (WARNING) - django.request - Not Found: /
+2023-11-23 12:40:10,038 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
+2023-11-23 12:40:10,437 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
