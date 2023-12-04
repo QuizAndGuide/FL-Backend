@@ -3,13 +3,13 @@ import json
 import requests
 from django.core.management.base import BaseCommand
 from api.models import RoundMatch
-from api.serializers import RoundMatchSerializer, RoundUpdateSerializer
+from api.serializers import RoundMatchSerializer
 
 class Command(BaseCommand):
     help = 'obtiene la informacion de los partidos de la jornada en curso'
 
     def handle(self, *args, **kwargs):
-        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1&round=14"
+        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1"
 
         try:
             response = requests.get(url)
@@ -32,8 +32,8 @@ class Command(BaseCommand):
 
                     # Serializar y guardar o actualizar todos los elementos de la lista 'table'
                         for item in match:
-                            item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
-                            serializer = RoundUpdateSerializer(existing_record, data=item)
+                            # item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
+                            serializer = RoundMatchSerializer(existing_record, data=item)
                             if serializer.is_valid():
                                 serializer.save()
                                 self.stdout.write("Registro actualizado.")
@@ -42,7 +42,7 @@ class Command(BaseCommand):
                                 self.stderr.write(f"Errores de validación para el registro: {errors}")
                     else:
                         for item in match:
-                            item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
+                            # item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
                             serializer = RoundMatchSerializer(data=item)
                             if serializer.is_valid():
                                 serializer.save()
