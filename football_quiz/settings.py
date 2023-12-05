@@ -83,35 +83,38 @@ WSGI_APPLICATION = 'football_quiz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'api-leage',
+        'HOST': '192.168.0.99',
+        'PORT': '33066',
+        'USER': 'app',
+        'PASSWORD': '4p1f007b011'
+    }
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'djongo',
-#         'NAME': 'apifutbol_db',  # Your MongoDB database name
 #         'ENFORCE_SCHEMA': False,
+#         'NAME': 'api-leage',
+#         'CLIENT':{
+#             'host': '192.168.1.11',
+#             'port': 23013,
+#             'username': 'app',
+#             'password': '4p1f007b011',
+#         },
+#         'LOGGING': {
+#             'version': 1,
+#             'loggers': {
+#                 'djongo': {
+#                     'level': 'DEBUG',
+#                     'propagate': False,                        
+#                 }
+#             },
+#             },
 #     }
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'ENFORCE_SCHEMA': False,
-        'NAME': 'api-leage',
-        'CLIENT':{
-            'host': '192.168.1.11',
-            'port': 23013,
-            'username': 'app',
-            'password': '4p1f007b011',
-        },
-        'LOGGING': {
-            'version': 1,
-            'loggers': {
-                'djongo': {
-                    'level': 'DEBUG',
-                    'propagate': False,                        
-                }
-            },
-            },
-    }
-}
 
 
 # Password validation

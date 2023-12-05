@@ -3215,3 +3215,7 @@ Traceback (most recent call last):
   File "/Users/ric/.local/share/virtualenvs/djongofootball-2Ah-EyYR/lib/python3.11/site-packages/djongo/cursor.py", line 81, in fetchone
     raise db_exe from e
 django.db.utils.DatabaseError
+2023-12-05 08:00:34,237 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-05 08:00:47,677 (WARNING) - django.request - Not Found: /
+2023-12-05 08:00:53,824 (WARNING) - django.request - Method Not Allowed: /core/create_user/
+2023-12-05 08:02:55,789 (WARNING) - django.request - Bad Request: /core/create_user/
