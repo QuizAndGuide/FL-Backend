@@ -17,8 +17,8 @@ class Command(BaseCommand):
             if response.status_code == 200:
                 data = response.json()
 
-                with open('stats.json', 'w') as json_file:
-                    json.dump(data, json_file)
+                # with open('stats.json', 'w') as json_file:
+                #     json.dump(data, json_file)
 
                 stats_lists = ['goals', 'yellow_cards', 'red_cards', 'asists']
 
