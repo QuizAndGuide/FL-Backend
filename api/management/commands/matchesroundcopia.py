@@ -22,34 +22,64 @@ class Command(BaseCommand):
                     json.dump(data, json_file)
 
                 # Verificar si la lista 'table' no está vacía
-                if match:
-                    first_item = match[0]
-                    round_value = first_item.get('round')
+                if match[0]:
 
-                    # Buscar el registro existente en función del campo 'round'
-                    existing_record = RoundMatch.objects.filter(round=round_value).first()
-                    if existing_record:
-
-                    # Serializar y guardar o actualizar todos los elementos de la lista 'table'
-                        for item in match:
-                            # item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
-                            serializer = RoundMatchSerializer(existing_record, data=item)
+                    for item in match:
+                        id = item.get('id')
+                        round = item.get('round')
+                        existing_record = RoundMatch.objects.filter(pk=id)
+                        if existing_record:
+                            existing_record.delete()
+                            serializer = RoundMatchSerializer(data=item)
                             if serializer.is_valid():
                                 serializer.save()
                                 self.stdout.write("Registro actualizado.")
                             else:
                                 errors = serializer.errors
                                 self.stderr.write(f"Errores de validación para el registro: {errors}")
-                    else:
-                        for item in match:
-                            # item['date'] = datetime.strptime(item['date'], '%Y/%m/%d').date()
+                        else:
                             serializer = RoundMatchSerializer(data=item)
                             if serializer.is_valid():
                                 serializer.save()
-                                self.stdout.write("Registro creado correctamente.")
+                                self.stdout.write("Registro actualizado.")
                             else:
                                 errors = serializer.errors
                                 self.stderr.write(f"Errores de validación para el registro: {errors}")
+            next_round =+ int(round)  
+            next_round_url = url + f'&round={next_round}'
+            response = requests.get(next_round_url)
+
+            if response.status_code == 200:
+                data = json.loads(response.content)
+                match = data.get('match', [])
+
+                with open('round.json', 'w') as json_file:
+                    json.dump(data, json_file)
+
+                # Verificar si la lista 'table' no está vacía
+                if match[0]:
+
+                    for item in match:
+                        id = item.get('id')
+                        existing_record = RoundMatch.objects.filter(pk=id)
+                        if existing_record:
+                            existing_record.delete()
+                            serializer = RoundMatchSerializer(data=item)
+                            if serializer.is_valid():
+                                serializer.save()
+                                self.stdout.write("Next_round:Registro actualizado.")
+                            else:
+                                errors = serializer.errors
+                                self.stderr.write(f"Next_round:Errores de validación para el registro: {errors}")
+                        else:
+                            serializer = RoundMatchSerializer(data=item)
+                            if serializer.is_valid():
+                                serializer.save()
+                                self.stdout.write("Next_round:Registro actualizado.")
+                            else:
+                                errors = serializer.errors
+                                self.stderr.write(f"Next_round:Errores de validación para el registro: {errors}")
+                
 
                 self.stdout.write("Datos de la jornada guardados o actualizados correctamente")
             # Error handling for unsuccessful requests

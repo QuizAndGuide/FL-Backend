@@ -9,7 +9,7 @@ class Command(BaseCommand):
     help = 'obtiene la informacion de los partidos de la jornada en curso'
 
     def handle(self, *args, **kwargs):
-        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1&round=14"
+        url = "https://apiclient.besoccerapps.com/scripts/api/api.php?key=5377a0809e482cab755825001d412121&format=json&req=matchs&league=1"
 
         try:
             response = requests.get(url)

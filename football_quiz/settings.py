@@ -181,7 +181,7 @@ ADMINS = [
     ('ric', 'admin@ric.com')
 ]
 
-
+CELERY_BROKER_URL = 'redis://192.168.0.99:6379/1'
 
 
 LOGGING = {
