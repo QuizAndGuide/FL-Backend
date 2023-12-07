@@ -18,8 +18,8 @@ class Command(BaseCommand):
                 data = json.loads(response.content)
                 match = data.get('match', [])
 
-                with open('round.json', 'w') as json_file:
-                    json.dump(data, json_file)
+                # with open('round.json', 'w') as json_file:
+                #     json.dump(data, json_file)
 
                 # Verificar si la lista 'table' no está vacía
                 if match[0]:
@@ -53,8 +53,8 @@ class Command(BaseCommand):
                 data = json.loads(response.content)
                 match = data.get('match', [])
 
-                with open('round.json', 'w') as json_file:
-                    json.dump(data, json_file)
+                # with open('next_round.json', 'w') as json_file:
+                #     json.dump(data, json_file)
 
                 # Verificar si la lista 'table' no está vacía
                 if match[0]:
