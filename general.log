@@ -1892,3 +1892,6 @@ django.core.exceptions.ImproperlyConfigured: Field name `phone` is not valid for
 2023-11-23 12:35:59,295 (WARNING) - django.request - Not Found: /
 2023-11-23 12:40:10,038 (INFO) - django.utils.autoreload - /Users/ric/pypro/djongofootball/api/views.py changed, reloading.
 2023-11-23 12:40:10,437 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-07 07:24:19,539 (WARNING) - django.request - Unauthorized: /api/goalers/
+2023-12-07 07:24:24,487 (WARNING) - django.request - Unauthorized: /api/goalers/
+2023-12-07 07:24:27,479 (WARNING) - django.request - Unauthorized: /api/goalers/

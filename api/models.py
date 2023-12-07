@@ -119,7 +119,7 @@ class RoundMatch(models.Model):
        
 
 class Stats(models.Model):
-    player_id = models.IntegerField()
+    player_id = models.IntegerField(primary_key=True)
     nick = models.CharField(max_length=30) 
     name = models.CharField(max_length=255) 
     role = models.IntegerField()

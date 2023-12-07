@@ -17,8 +17,8 @@ class Command(BaseCommand):
             if response.status_code == 200:
                 data = response.json()
 
-                # with open('stats.json', 'w') as json_file:
-                #     json.dump(data, json_file)
+                with open('stats.json', 'w') as json_file:
+                    json.dump(data, json_file)
 
                 stats_lists = ['goals', 'yellow_cards', 'red_cards', 'asists']
 
@@ -28,15 +28,27 @@ class Command(BaseCommand):
                     for stat_data in stats_list:
                         # Cambia 'total' por el nombre de la lista actual en el JSON si es necesario
                         stat_data[stats_type] = stat_data.pop('total', None)
+                        player_id = stat_data.get('player_id')
 
-                        # Serializar y guardar en la base de datos
-                        serializer = StatsSerializer(data=stat_data)
-                        if serializer.is_valid():
-                            serializer.save()
-                            self.stdout.write(self.style.SUCCESS('Registro creado correctamente'))
+                        existing_record = Stats.objects.filter(player_id=player_id)
+                        
+                        if existing_record:
+                            existing_record.delete()
+                            serializer = StatsSerializer(data=stat_data)
+                            if serializer.is_valid():
+                                serializer.save()
+                                self.stdout.write(self.style.SUCCESS('Registro creado correctamente'))
+                            else:
+                                errors = serializer.errors
+                                self.stderr.write(self.style.ERROR(f'Errores de validación para el registro: {errors}'))
                         else:
-                            errors = serializer.errors
-                            self.stderr.write(self.style.ERROR(f'Errores de validación para el registro: {errors}'))
+                            serializer = StatsSerializer(data=stat_data)
+                            if serializer.is_valid():
+                                serializer.save()
+                                self.stdout.write(self.style.SUCCESS('Registro creado correctamente'))
+                            else:
+                                errors = serializer.errors
+                                self.stderr.write(self.style.ERROR(f'Errores de validación para el registro: {errors}'))
             # Error handling for unsuccessful requests
             else:
                 self.stderr.write(f'Error en la solicitud. Código de respuesta: {response.status_code}' if response.status_code != 200 else response.status_code)
