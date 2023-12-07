@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+from celery.schedules import crontab
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -181,8 +182,15 @@ ADMINS = [
     ('ric', 'admin@ric.com')
 ]
 
+CELERY_BROKER_URL = 'redis://192.168.0.99:6379/1'
 
-
+CELERY_BEAT_SCHEDULE = {
+    'update_db': {
+        'task': 'api.tasks.ejecutar_update',
+        'schedule': crontab()
+        
+    }
+}
 
 LOGGING = {
     'version': 1,
