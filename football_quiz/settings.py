@@ -139,7 +139,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Madrid'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -187,7 +187,7 @@ CELERY_BROKER_URL = 'redis://192.168.0.99:6379/1'
 CELERY_BEAT_SCHEDULE = {
     'update_db': {
         'task': 'api.tasks.ejecutar_update',
-        'schedule': crontab(minute='*/30', hour='17-23', day_of_week='thu-fri-sat-sun')
+        'schedule': crontab()
         
     }
 }
