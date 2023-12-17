@@ -25,8 +25,8 @@ class Command(BaseCommand):
             if response.status_code == 200:
                 data = response.json()
                 
-                with open('MonthMatches.json', 'w') as json_file:
-                    json.dump(data, json_file)
+                # with open('MonthMatches.json', 'w') as json_file:
+                #     json.dump(data, json_file)
 
                 matches_list = [match for week in data["d"] for match in week.get("matches", [])]
                 if matches_list:
