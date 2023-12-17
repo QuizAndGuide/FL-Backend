@@ -1898,3 +1898,8 @@ django.core.exceptions.ImproperlyConfigured: Field name `phone` is not valid for
 2023-12-07 07:24:24,487 (WARNING) - django.request - Unauthorized: /api/goalers/
 2023-12-07 07:24:27,479 (WARNING) - django.request - Unauthorized: /api/goalers/
 >>>>>>> pvm-celery-redis
+2023-12-10 14:11:21,071 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-10 14:11:24,262 (WARNING) - django.request - Not Found: /
+2023-12-10 14:11:24,929 (WARNING) - django.request - Not Found: /apple-touch-icon-precomposed.png
+2023-12-10 14:11:24,946 (WARNING) - django.request - Not Found: /apple-touch-icon.png
+2023-12-10 14:11:34,636 (WARNING) - django.request - Not Found: /

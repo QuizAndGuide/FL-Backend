@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action, permission_classes
-from datetime import datetime
+from django.utils import timezone
 from .models import Profile, RoundMatch, Stats
 from .serializers import ProfileSerializer, RoundMatchSerializer, StatsSerializer
 from .permissions import *
@@ -58,7 +58,8 @@ class ProfileViewSet(viewsets.ModelViewSet):
 @permission_classes([IsAuthenticated])
 class NextMatchesView(APIView):
     def get(self, request, format=None):
-        next_matches = RoundMatch.objects.filter(status=-1).order_by('schedule')
+        next_matches = RoundMatch.objects.filter(schedule__gte=timezone.now()).order_by('schedule')
+
         serializer = RoundMatchSerializer(next_matches, many=True)        
         return Response(serializer.data)
     
