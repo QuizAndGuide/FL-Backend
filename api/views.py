@@ -36,29 +36,11 @@ class ProfileViewSet(viewsets.ModelViewSet):
             return Response(serializer.data)
 
 
-# class JornadaViewSet(viewsets.ViewSet):
-#     permission_classes = [IsAuthenticated]
 
-#     @action(detail=False, methods=['get'])
-#     def matches(self, request):
-#         proximos_partidos = Jornada.objects.filter(schedule__gte=datetime.now()).order_by('schedule')[:3]
-#         serializer = MatchesSerializer(proximos_partidos, many=True)        
-#         return Response(serializer.data)
-
-
-# class MaxGoalersViewSet(viewsets.ViewSet):
-#     permission_classes = [IsAuthenticated]
-
-#     @action(detail=False, methods=['get'])
-#     def max_goalers(self, request):
-#         max_goalers = Stats.objects.all().order_by('-goals')[:3]
-#         serializer = MaxGoalersSerializer(max_goalers, many=True)
-        
-#         return Response(serializer.data)
 @permission_classes([IsAuthenticated])
 class NextMatchesView(APIView):
     def get(self, request, format=None):
-        next_matches = RoundMatch.objects.filter(schedule__gte=timezone.now()).order_by('schedule')
+        next_matches = RoundMatch.objects.filter(schedule__gte=timezone.now()).order_by(-'schedule')
 
         serializer = RoundMatchSerializer(next_matches, many=True)        
         return Response(serializer.data)
@@ -79,3 +61,23 @@ class MaxGoalersView(APIView):
         max_goalers = Stats.objects.all().order_by('-goals')
         serializer = StatsSerializer(max_goalers, many=True)
         return Response(serializer.data)
+    
+# class JornadaViewSet(viewsets.ViewSet):
+#     permission_classes = [IsAuthenticated]
+
+#     @action(detail=False, methods=['get'])
+#     def matches(self, request):
+#         proximos_partidos = Jornada.objects.filter(schedule__gte=datetime.now()).order_by('schedule')[:3]
+#         serializer = MatchesSerializer(proximos_partidos, many=True)        
+#         return Response(serializer.data)
+
+
+# class MaxGoalersViewSet(viewsets.ViewSet):
+#     permission_classes = [IsAuthenticated]
+
+#     @action(detail=False, methods=['get'])
+#     def max_goalers(self, request):
+#         max_goalers = Stats.objects.all().order_by('-goals')[:3]
+#         serializer = MaxGoalersSerializer(max_goalers, many=True)
+        
+#         return Response(serializer.data)
