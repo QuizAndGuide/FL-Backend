@@ -1,28 +1,35 @@
-version: '3'
-
+version: '3.9'
 services:
   web:
-    image: fl-django
-    command: gunicorn football_quiz.wsgi:application --bind 0.0.0.0:8000
+    build: .
+    command: ./docker-entrypoint.sh
     ports:
-      - "8000:8000"
-    depends_on:
-      - celery
-    working_dir: /code  # Cambia el directorio de trabajo dentro del contenedor
-#    volumes:
-#      - .:/code  # Monta el directorio actual en /app dentro del contenedor
-
-  celery:
-    image: fl-django
-    command: celery -A football_quiz worker -l info
+      - 8000:8000
     depends_on:
       - redis
-#    volumes:
-#      - .:/code
-    environment:
-      - DJANGO_SETTINGS_MODULE=football_quiz.settings
-
+    restart: on-failure
+    volumes:
+      - .:/app
   redis:
-    image: "redis:latest"
+    image: redis:6.2-alpine
     ports:
-      - "6379:6379"
+      - 6379:6379
+    restart: always
+    volumes:
+      - redisdata:/data
+  celery:
+    build: .
+    command: celery -A football_quiz worker --loglevel=info
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+  celery-beat:
+    build: .
+    command: celery -A football_quiz beat --loglevel=info
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+volumes:
+  redisdata:    
