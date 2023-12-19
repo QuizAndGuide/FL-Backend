@@ -1,36 +1,21 @@
-import requests
+import os
+from dotenv import load_dotenv
+from django import setup as django_setup
+from django.utils import timezone
+from api.models import RoundMatch
 
-token_endpoint = "http://127.0.0.1:8000/auth/jwt/create/"
+# Carga las variables de entorno desde el archivo .env
+load_dotenv()
 
-usuario = "tu_usuario"
-contrasena = "tu_contraseña"
+# Configura la variable de entorno DJANGO_SETTINGS_MODULE
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", os.getenv("DJANGO_SETTINGS_MODULE"))
 
-datos_token = {
-    "username": usuario,
-    "password": contrasena,
-}
+# Configura las configuraciones de Django
+django_setup()
 
-response = requests.post(token_endpoint, data=datos_token)
+# Ahora puedes acceder a las configuraciones de Django
+from django.conf import settings
 
-if response.status_code == 200:
-    token_jwt = response.json().get("access")
-    print(f"Token JWT obtenido: {token_jwt}")
-
-    url = "http://127.0.0.1:8000/api/"
-
-    headers = {
-        "Authorization": f"Bearer {token_jwt}",
-        "Content-Type": "application/json",
-    }
-
-    response = requests.get(url, headers=headers)
-
-    if response.status_code == 200:
-        print("Solicitud exitosa!")
-        print(response.json())
-    else:
-        print(f"Error en la solicitud protegida: {response.status_code}")
-        print(response.text)
-else:
-    print(f"Error al obtener el token: {response.status_code}")
-    print(response.text)
+# Tu código restante
+next_matches = RoundMatch.objects.filter(schedule__gte=timezone.now()).order_by('-schedule')
+print(timezone.now(), next_matches)
