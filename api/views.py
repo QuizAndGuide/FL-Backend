@@ -40,7 +40,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
 @permission_classes([IsAuthenticated])
 class NextMatchesView(APIView):
     def get(self, request, format=None):
-        next_matches = RoundMatch.objects.filter(schedule__gte=timezone.now()).order_by(-'schedule')
+        next_matches = RoundMatch.objects.filter(schedule__gte=timezone.now()).order_by('-schedule')
 
         serializer = RoundMatchSerializer(next_matches, many=True)        
         return Response(serializer.data)

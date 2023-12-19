@@ -1903,3 +1903,6 @@ django.core.exceptions.ImproperlyConfigured: Field name `phone` is not valid for
 2023-12-10 14:11:24,929 (WARNING) - django.request - Not Found: /apple-touch-icon-precomposed.png
 2023-12-10 14:11:24,946 (WARNING) - django.request - Not Found: /apple-touch-icon.png
 2023-12-10 14:11:34,636 (WARNING) - django.request - Not Found: /
+2023-12-19 20:40:15,313 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-19 20:44:14,585 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-19 20:46:36,773 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
