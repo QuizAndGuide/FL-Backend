@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.conf import settings
-from djongo import models
+from django.db import models
 
 class Profile(models.Model):
     MEMBERSHIP_FREE = 'F'

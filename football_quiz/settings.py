@@ -93,24 +93,11 @@ WSGI_APPLICATION = 'football_quiz.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'ENFORCE_SCHEMA': False,
-        'NAME': 'api-leage',
-        'CLIENT':{
-            'host': '192.168.1.11',
-            'port': 23013,
-            'username': 'app',
-            'password': '4p1f007b011',
-        },
-        'LOGGING': {
-            'version': 1,
-            'loggers': {
-                'djongo': {
-                    'level': 'DEBUG',
-                    'propagate': False,                        
-                }
-            },
-            },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'football',
+        'HOST': '192.168.1.5',
+        'USER': 'football',
+        'PASSWORD': 'f00tb4ll'
     }
 }
 
