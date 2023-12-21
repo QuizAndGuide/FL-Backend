@@ -42,6 +42,16 @@ class Profile(models.Model):
             ('view_history', 'Can view history')
         ]
 
+class Configuration(models.Model):
+    key = models.CharField(max_length=255)
+    value = models.TextField()
+
+
+class Languaje(models.Model):
+    key = models.CharField(max_length=255)
+    language = models.CharField(max_length=3)
+    value = models.TextField()
+
 class MonthMatch(models.Model):
     # id = models.OneToOneField('Round', primary_key=True, on_delete=models.CASCADE)
     id = models.IntegerField(primary_key=True)

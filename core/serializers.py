@@ -17,9 +17,15 @@ class UserCreateSerializer(BaseUserCreateSerializer):
         
         return value
 
-    def create(self, validated_data):
+    def create(self, value):
         # Create the user and return it
-        return get_user_model().objects.create_user(**validated_data)
+        if get_user_model().objects.filter(username=value).exists():
+            raise serializers.ValidationError("Username already exists. Please choose a different one.")
+        
+        if get_user_model().objects.filter(email=value).exists():
+            raise serializers.ValidationError("Email already exists.")
+        
+        return True
 
 
 class UserSerializer(BaseUserSerializer):

@@ -1,7 +1,7 @@
 from typing import Any
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import Profile, RoundMatch, Stats, MonthMatch
+from .models import Profile, RoundMatch, Stats, MonthMatch, Configuration, Languaje
 from datetime import datetime
 
 class UserSerializer(serializers.ModelSerializer):
@@ -84,3 +84,14 @@ class NextMonthMatchesSerializer(serializers.ModelSerializer):
         model = MonthMatch
         fields = ['team1', 'team2', 'shedule']
         
+class LanguajeSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Languaje
+        fields = '__all__'
+        
+class ConfigurationSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Configuration
+        fields = '__all__' 

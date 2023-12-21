@@ -7,8 +7,8 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import action, permission_classes
 from django.utils import timezone
-from .models import Profile, RoundMatch, Stats
-from .serializers import ProfileSerializer, RoundMatchSerializer, StatsSerializer
+from .models import Profile, RoundMatch, Stats, Configuration, Languaje
+from .serializers import ProfileSerializer, RoundMatchSerializer, StatsSerializer, ConfigurationSerializer, LanguajeSerializer
 from .permissions import *
 from rest_framework.exceptions import NotFound
 
@@ -62,6 +62,19 @@ class MaxGoalersView(APIView):
         serializer = StatsSerializer(max_goalers, many=True)
         return Response(serializer.data)
     
+    
+@permission_classes([IsAuthenticated])
+class ConfigurationView(APIView):
+    def post(self, request, format=None):
+        key = request.data.get('key', None)
+        if key is not None:
+            conf = Configuration.objects.get(key=key)
+            serializer = ConfigurationSerializer(conf)
+            return Response(serializer.data)
+        else:
+            return Response({'error': 'Se requiere la clave en el cuerpo de la solicitud'}, status=400)
+        
+        
 # class JornadaViewSet(viewsets.ViewSet):
 #     permission_classes = [IsAuthenticated]
 
