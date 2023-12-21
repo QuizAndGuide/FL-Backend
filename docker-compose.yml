@@ -33,7 +33,7 @@ services:
       - .:/app
   flower:
     build: .
-    command: celery -A storefront flower
+    command: celery -A football_quiz flower
     depends_on:
       - web
       - redis
