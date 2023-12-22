@@ -169,7 +169,7 @@ ADMINS = [
     ('ric', 'admin@ric.com')
 ]
 
-CELERY_BROKER_URL = 'redis://192.168.0.99:6379/1'
+CELERY_BROKER_URL = 'redis://redis:6379/1'
 
 CELERY_BEAT_SCHEDULE = {
     'update_db': {
