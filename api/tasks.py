@@ -30,6 +30,6 @@ def schedule_next_task(schedule_time):
     # Lógica para programar la tarea Celery dos horas después de la hora dada
     # Puedes usar la configuración de cron o el método crontab() de Celery aquí
     app.conf.beat_schedule['next_task'] = {
-        'task': 'your_project.tasks.process_matches',
+        'task': 'api.tasks.process_matches',
         'schedule': schedule_time,
     }
