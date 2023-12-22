@@ -40,8 +40,8 @@ services:
       - celery
     environment:
       - DEBUG=1
-      - CELERY_BROKER=redis://redis:6379/0
-      - CELERY_BACKEND=redis://redis:6379/0
+      - CELERY_BROKER=redis://192.168.1.12:6379/0
+      - CELERY_BACKEND=redis://192.168.1.12:6379/0
     ports:
       - 5555:5555
 volumes:
