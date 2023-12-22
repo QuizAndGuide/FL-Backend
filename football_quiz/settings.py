@@ -173,8 +173,8 @@ CELERY_BROKER_URL = 'redis://192.168.0.99:6379/1'
 
 CELERY_BEAT_SCHEDULE = {
     'update_db': {
-        'task': 'api.tasks.ejecutar_update',
-        'schedule': crontab()
+        'task': 'api.tasks.process_matches',
+        'schedule': crontab(5)
         
     }
 }
