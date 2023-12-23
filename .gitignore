@@ -11,6 +11,8 @@ __pycache__/
 .env
 
 .venv
+#log
+general.log
 
 # Unit test / coverage reports
 htmlcov/
