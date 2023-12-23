@@ -1,4 +1,5 @@
 from celery import Celery, shared_task
+from celery.schedules import crontab
 from datetime import timedelta
 from django.core.management import call_command
 from django.utils import timezone
@@ -31,5 +32,5 @@ def schedule_next_task(schedule_time):
     # Puedes usar la configuración de cron o el método crontab() de Celery aquí
     app.conf.beat_schedule['next_task'] = {
         'task': 'api.tasks.process_matches',
-        'schedule': schedule_time,
+        'schedule': crontab(minute=0, hour=0),
     }

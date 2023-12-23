@@ -1906,3 +1906,176 @@ django.core.exceptions.ImproperlyConfigured: Field name `phone` is not valid for
 2023-12-19 20:40:15,313 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2023-12-19 20:44:14,585 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2023-12-19 20:46:36,773 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-23 07:28:15,874 (ERROR) - celery.utils.dispatch.signal - Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x1071e3590>> raised: ModuleNotFoundError("No module named 'rest_framework'")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 97, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 135, in validate_models
+    self.django_setup()
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 131, in django_setup
+    django.setup()
+  File "/opt/homebrew/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/config.py", line 193, in create
+    import_module(entry)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.6_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'rest_framework'
+2023-12-23 07:28:15,875 (ERROR) - celery.utils.dispatch.signal - Signal handler <promise@0x1071772e0 --> <bound method Celery._autodiscover_tasks of <Celery football_quiz at 0x1071e2810>>> raised: AppRegistryNotReady("Apps aren't loaded yet.")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/vine/promises.py", line 160, in __call__
+    return self.throw()
+           ^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/vine/promises.py", line 157, in __call__
+    retval = fun(*final_args, **final_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 691, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 700, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+                                               ^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 703, in <listcomp>
+    for pkg in fixup.autodiscover_tasks()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 107, in autodiscover_tasks
+    return [config.name for config in apps.get_app_configs()]
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 147, in get_app_configs
+    self.check_apps_ready()
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 138, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+2023-12-23 07:36:40,103 (ERROR) - celery.utils.dispatch.signal - Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x106843cd0>> raised: ModuleNotFoundError("No module named 'rest_framework'")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 97, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 135, in validate_models
+    self.django_setup()
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 131, in django_setup
+    django.setup()
+  File "/opt/homebrew/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/config.py", line 193, in create
+    import_module(entry)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.6_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'rest_framework'
+2023-12-23 07:36:40,104 (ERROR) - celery.utils.dispatch.signal - Signal handler <promise@0x1068ff2e0 --> <bound method Celery._autodiscover_tasks of <Celery football_quiz at 0x106969390>>> raised: AppRegistryNotReady("Apps aren't loaded yet.")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/vine/promises.py", line 160, in __call__
+    return self.throw()
+           ^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/vine/promises.py", line 157, in __call__
+    retval = fun(*final_args, **final_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 691, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 700, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+                                               ^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 703, in <listcomp>
+    for pkg in fixup.autodiscover_tasks()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 107, in autodiscover_tasks
+    return [config.name for config in apps.get_app_configs()]
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 147, in get_app_configs
+    self.check_apps_ready()
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 138, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+2023-12-23 08:12:07,662 (ERROR) - celery.utils.dispatch.signal - Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x10457ea90>> raised: ModuleNotFoundError("No module named 'rest_framework'")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 97, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 135, in validate_models
+    self.django_setup()
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 131, in django_setup
+    django.setup()
+  File "/opt/homebrew/lib/python3.11/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/config.py", line 193, in create
+    import_module(entry)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.6_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'rest_framework'
+2023-12-23 08:12:07,664 (ERROR) - celery.utils.dispatch.signal - Signal handler <promise@0x10450b2e0 --> <bound method Celery._autodiscover_tasks of <Celery football_quiz at 0x10457db90>>> raised: AppRegistryNotReady("Apps aren't loaded yet.")
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/vine/promises.py", line 160, in __call__
+    return self.throw()
+           ^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/vine/promises.py", line 157, in __call__
+    retval = fun(*final_args, **final_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 691, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 700, in _autodiscover_tasks_from_fixups
+    return self._autodiscover_tasks_from_names([
+                                               ^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/app/base.py", line 703, in <listcomp>
+    for pkg in fixup.autodiscover_tasks()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/celery/fixups/django.py", line 107, in autodiscover_tasks
+    return [config.name for config in apps.get_app_configs()]
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 147, in get_app_configs
+    self.check_apps_ready()
+  File "/opt/homebrew/lib/python3.11/site-packages/django/apps/registry.py", line 138, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+2023-12-23 08:13:12,449 (INFO) - flower.command - Visit me at http://0.0.0.0:5555
+2023-12-23 08:13:12,453 (INFO) - flower.command - Broker: redis://192.168.1.12:6379/1
+2023-12-23 08:13:12,454 (INFO) - flower.command - Registered tasks: 
+['api.tasks.process_matches',
+ 'celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap']
+2023-12-23 08:13:12,800 (INFO) - kombu.mixins - Connected to redis://192.168.1.12:6379/1
