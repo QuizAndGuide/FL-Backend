@@ -126,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
@@ -169,12 +169,12 @@ ADMINS = [
     ('ric', 'admin@ric.com')
 ]
 
-CELERY_BROKER_URL = 'redis://192.168.0.99:6379/1'
+CELERY_BROKER_URL = 'redis://redis:6379/1'
 
 CELERY_BEAT_SCHEDULE = {
     'update_db': {
-        'task': 'api.tasks.ejecutar_update',
-        'schedule': crontab()
+        'task': 'api.tasks.process_matches',
+        'schedule': crontab(minute=0, hour=0),
         
     }
 }

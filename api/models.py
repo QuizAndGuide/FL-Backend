@@ -53,8 +53,8 @@ class Languaje(models.Model):
     value = models.TextField()
 
 class MonthMatch(models.Model):
-    # id = models.OneToOneField('Round', primary_key=True, on_delete=models.CASCADE)
     id = models.IntegerField(primary_key=True)
+    # id = models.OneToOneField('RoundMatch', primary_key=True, on_delete=models.CASCADE)
     team1 = models.IntegerField()
     team2 = models.IntegerField()
     r1 = models.SmallIntegerField()
@@ -79,8 +79,8 @@ class MonthMatch(models.Model):
     cc2 = models.CharField(max_length=2)
 
 class RoundMatch(models.Model):
-    # id = models.OneToOneField(MonthMatch, primary_key=True, on_delete=models.CASCADE)
     id = models.IntegerField(primary_key=True)
+    # id = models.OneToOneField(MonthMatch, primary_key=True, on_delete=models.CASCADE)
     year = models.IntegerField()
     group = models.IntegerField()
     total_group = models.IntegerField()

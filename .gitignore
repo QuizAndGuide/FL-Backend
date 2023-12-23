@@ -11,6 +11,10 @@ __pycache__/
 .env
 
 .venv
+#log
+general.log
+celerybeat-schedule.db
+
 
 # Unit test / coverage reports
 htmlcov/

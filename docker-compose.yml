@@ -31,5 +31,18 @@ services:
       - redis
     volumes:
       - .:/app
+  flower:
+    build: .
+    command: celery -A football_quiz flower
+    depends_on:
+      - web
+      - redis
+      - celery
+    environment:
+      - DEBUG=1
+      - CELERY_BROKER=redis://redis:6379/0
+      - CELERY_BACKEND=redis://redis:6379/0
+    ports:
+      - 5555:5555
 volumes:
   redisdata:    
