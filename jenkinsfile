@@ -3,8 +3,16 @@ pipeline {
     stages{
         stage('Build Docker Image') {
             steps {
-                echo 'Building Docker image...'
-                sh 'docker-compose build'
+                script {
+                    // Obtener información del usuario
+                    def userId = env.BUILD_USER_ID
+                    def username = env.BUILD_USER
+
+                    echo "Ejecutando la construcción como el usuario: ${username} (ID: ${userId})"
+                    
+                    // Resto de tus pasos de construcción aquí
+                    sh 'docker-compose build'
+                }
             }
         }
         stage('Run Tests') {
