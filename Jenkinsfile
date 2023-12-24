@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'kcrams server'
+    }
     stages{
         stage('Build Docker Image') {
             steps {
