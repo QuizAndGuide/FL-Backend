@@ -1,23 +1,24 @@
 pipeline {
     agent any
-    stage('Build Docker Image') {
-        steps {
-            echo 'Building Docker image...'
-            sh 'docker-compose build'
+    stages{
+        stage('Build Docker Image') {
+            steps {
+                echo 'Building Docker image...'
+                sh 'docker-compose build'
+            }
         }
-    }
-    stage('Run Tests') {
-        steps {
-            echo 'Running tests...'
-            sh 'docker-compose run web python manage.py test'
+        stage('Run Tests') {
+            steps {
+                echo 'Running tests...'
+                sh 'docker-compose run web python manage.py test'
+            }
         }
-    }
 
-    stage('Deploy') {
-        steps {
-            echo 'Deploying...'
-            sh 'docker-compose up -d'
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                sh 'docker-compose up -d'
+            }
         }
     }
 }
-
