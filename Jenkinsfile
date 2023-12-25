@@ -2,7 +2,7 @@ pipeline {
     agent {
         label 'kcrams server'
     }
-    stages{
+    stages {
         stage('Build Docker Image') {
             steps {
                 script {
@@ -17,10 +17,16 @@ pipeline {
                 }
             }
         }
+
         stage('Run Tests') {
             steps {
-                echo 'Running tests...'
-                sh 'docker-compose run web python manage.py test'
+                script {
+                    echo 'Running tests...'
+                    def result = sh(script: 'docker-compose run web python manage.py test', returnStatus: true)
+                    if (result != 0) {
+                        error "Test failed. Stopping the pipeline."
+                    }
+                }
             }
         }
 

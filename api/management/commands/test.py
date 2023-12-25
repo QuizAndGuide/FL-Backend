@@ -31,6 +31,8 @@ class Command(BaseCommand):
             response = requests.get(url, headers=headers)
             
             print(response.status_code)
+            if response.status_code == 200:
+                print(f"endpoint: {endpoint} working.")
             # print(response.text)
             # print(response.json())
             print("-------------------------")
