@@ -84,13 +84,7 @@ WSGI_APPLICATION = 'football_quiz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'djongo',
-#         'NAME': 'apifutbol_db',  # Your MongoDB database name
-#         'ENFORCE_SCHEMA': False,
-#     }
-# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
