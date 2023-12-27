@@ -29,3 +29,8 @@ class NextGames(admin.ModelAdmin):
                     'hour', 'minute', 'local_goals', 'visitor_goals', 'result',
                     'live_minute', 'status', 'channels', 'winner', 'penaltis1', 'penaltis2' ]
     ordering = ['-schedule']
+    
+@admin.register(models.Configuration)
+class ConfigurationAdmin(admin.ModelAdmin):
+    list_display = ['key', 'value']
+    ordering = ['key']

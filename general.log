@@ -2079,3 +2079,169 @@ django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
  'celery.map',
  'celery.starmap']
 2023-12-23 08:13:12,800 (INFO) - kombu.mixins - Connected to redis://192.168.1.12:6379/1
+2023-12-27 17:02:17,323 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:02:44,217 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/admin.py changed, reloading.
+2023-12-27 17:02:44,470 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:03:27,895 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/admin.py changed, reloading.
+2023-12-27 17:03:28,146 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:03:44,723 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/admin.py changed, reloading.
+2023-12-27 17:03:44,977 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:04:20,351 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:04:39,134 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:07:51,692 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:07:59,966 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:08:00,002 (WARNING) - django.request - Bad Request: /admin
+2023-12-27 17:08:00,264 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:08:00,275 (WARNING) - django.request - Bad Request: /favicon.ico
+2023-12-27 17:08:45,626 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2023-12-27 17:08:45,976 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:09:13,843 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:09:13,893 (WARNING) - django.request - Bad Request: /admin
+2023-12-27 17:09:14,033 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:09:14,059 (WARNING) - django.request - Bad Request: /favicon.ico
+2023-12-27 17:09:58,008 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:09:58,041 (WARNING) - django.request - Bad Request: /admin
+2023-12-27 17:09:58,136 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:09:58,165 (WARNING) - django.request - Bad Request: /favicon.ico
+2023-12-27 17:10:14,088 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:10:18,951 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:10:18,992 (WARNING) - django.request - Bad Request: /admin
+2023-12-27 17:10:19,087 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:10:19,112 (WARNING) - django.request - Bad Request: /favicon.ico
+2023-12-27 17:10:21,035 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:10:21,068 (WARNING) - django.request - Bad Request: /admin
+2023-12-27 17:10:21,160 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2023-12-27 17:10:21,187 (WARNING) - django.request - Bad Request: /favicon.ico
+2023-12-27 17:10:38,137 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2023-12-27 17:10:38,468 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2023-12-27 17:10:47,209 (WARNING) - django.request - Not Found: /favicon.ico
