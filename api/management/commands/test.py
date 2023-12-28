@@ -50,7 +50,7 @@ class Command(BaseCommand):
         datos_user = {
             "username": "example",
             "password": "GTRE2F$·",
-            "email": "example@example.com",
+            "email": "example@example.com"
         }
 
         # Create User
