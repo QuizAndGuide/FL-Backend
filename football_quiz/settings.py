@@ -30,6 +30,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["192.168.1.12","127.0.0.1"]
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+    "192.168.1.12"
+    # ...
+]
+
 
 # Application definition
 
