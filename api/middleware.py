@@ -19,3 +19,4 @@ class AutoUpdater:
             
             return response
              
+# viendo si implementar la llamada del comando update como middleware o en celery, o ambos
