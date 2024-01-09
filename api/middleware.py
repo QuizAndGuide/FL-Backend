@@ -7,7 +7,8 @@ class AutoUpdater:
         self.get_response = get_response
         
     def update_db(self):
-        queryset = RoundMatch.objects.filter(schedule__lte=timezone.now()).order_by('schedule').first()
+        ending_game = timezone.now() + timezone.timedelta(hours=2, minutes=15)
+        queryset = RoundMatch.objects.filter(schedule__lte=ending_game).order_by('schedule').first()
         if queryset.result == 'x-x':
             update = update_db() 
             update.handle()
@@ -21,3 +22,6 @@ class AutoUpdater:
             return response
              
 # viendo si implementar la llamada del comando update como middleware o en celery, o ambos
+
+# todavia dandole vueltas a la logica para ver si esta desactualizada la base de datos
+
