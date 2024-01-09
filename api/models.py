@@ -12,8 +12,8 @@ class Profile(models.Model):
         (MEMBERSHIP_PREMIUM, 'Premium'),
         (MEMBERSHIP_PREMIUMPLUS, 'Premium+'),
     ]
-    id = models.IntegerField(primary_key=True)
-    email = models.EmailField(max_length=100, unique=True)
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     coins = models.IntegerField(default=1000) 
     rating = models.IntegerField(default=1200)  
     country = models.CharField(max_length=100)
@@ -22,8 +22,6 @@ class Profile(models.Model):
     team = models.CharField(max_length=100)
     membership = models.CharField(
         max_length=2, choices=MEMBERSHIP_CHOICES, default=MEMBERSHIP_FREE)
-    user = models.OneToOneField(
-        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.user.first_name} {self.user.last_name}'
