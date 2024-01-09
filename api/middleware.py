@@ -16,6 +16,7 @@ class AutoUpdater:
 
         if request.path == '/api/nextmatches/':
             response = self.get_response(request)
+            update_db.delay(2)
             
             return response
              
