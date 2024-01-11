@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running tests...'
-                    def result = sh(script: 'python manage.py test', returnStatus: true)
+                    def result = sh(script: 'python3 manage.py test', returnStatus: true)
                     if (result != 0) {
                         error "Test failed. Stopping the pipeline."
                     }
