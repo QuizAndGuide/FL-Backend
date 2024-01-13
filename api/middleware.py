@@ -44,4 +44,3 @@ class JWTAuthMiddleware:
 
         return response
 
->>>>>>> Stashed changes

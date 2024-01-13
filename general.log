@@ -2261,3 +2261,6 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-01-13 22:58:09,434 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-01-13 22:58:55,952 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/middleware.py changed, reloading.
 2024-01-13 22:58:56,298 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 22:59:48,718 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 22:59:57,097 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/middleware.py changed, reloading.
+2024-01-13 22:59:57,345 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
