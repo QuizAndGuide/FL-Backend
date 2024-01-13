@@ -2245,3 +2245,16 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2023-12-27 17:10:38,137 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
 2023-12-27 17:10:38,468 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2023-12-27 17:10:47,209 (WARNING) - django.request - Not Found: /favicon.ico
+2024-01-13 21:59:33,661 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 22:00:30,645 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 22:01:48,259 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 22:01:51,924 (WARNING) - django.request - Not Found: /
+2024-01-13 22:01:52,075 (WARNING) - django.request - Not Found: /favicon.ico
+2024-01-13 22:01:52,078 (WARNING) - django.request - Not Found: /apple-touch-icon-precomposed.png
+2024-01-13 22:01:52,097 (WARNING) - django.request - Not Found: /apple-touch-icon.png
+2024-01-13 22:01:59,207 (WARNING) - django.request - Not Found: /
+2024-01-13 22:02:16,231 (WARNING) - django.request - Unauthorized: /api/nextmatches/
+2024-01-13 22:16:50,430 (WARNING) - django.request - Unauthorized: /api/nextmatches/
+2024-01-13 22:19:55,929 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/middleware.py changed, reloading.
+2024-01-13 22:19:56,412 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 22:20:10,432 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
