@@ -19,8 +19,7 @@ class AutoUpdater:
             
             return response
              
-<<<<<<< Updated upstream
-=======
+
 # viendo si implementar la llamada del comando update como middleware o en celery, o ambos
 
 # todavia dandole vueltas a la logica para ver si esta desactualizada la base de datos
