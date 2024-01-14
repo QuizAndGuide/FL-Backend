@@ -26,6 +26,7 @@ class AutoUpdater:
 
 from django.shortcuts import redirect
 from rest_framework.permissions import IsAuthenticated
+import requests
 
 class JWTAuthMiddleware:
     def __init__(self, get_response):
@@ -35,12 +36,24 @@ class JWTAuthMiddleware:
         response = self.get_response(request)
         if (
             response.status_code == 401
-            and "Authentication credentials were not provided." in response.data.get("detail", "")
         ):
-            # Almacenar la URL original antes de redirigir
-            request.session['original_path'] = request.path
-            # Redirigir a auth/jwt/create si las credenciales no fueron proporcionadas
-            return redirect('/auth/jwt/create')
+            if "Authentication credentials were not provided." in response.data.get("detail", ""):
+                # Almacenar la URL original antes de redirigir
+                request.session['original_path'] = request.path
+                # Redirigir a auth/jwt/create si las credenciales no fueron proporcionadas
+                return redirect('/auth/jwt/create')
+                
+            # if "Given token not valid for any token type" in response.data.get("detail", ""):
+            #     refresh_url = request.build_absolute_uri('/auth/jwt/refresh/')
+            #     refresh_response = requests.post(refresh_url, data={'token': request.auth.token})
+
+            #     if refresh_response.status_code == 200:
+            #         # Obtener el nuevo token del response
+            #         new_token = refresh_response.json().get('access')
+
+            #         # Redirigir al usuario de vuelta a la página original con el nuevo token en el encabezado de autorización
+            #         original_path = request.session.get('original_path', '/')
+            #         return redirect(original_path, {'Authorization': f'Bearer {new_token}'})
 
         return response
 

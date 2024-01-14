@@ -2264,3 +2264,15 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-01-13 22:59:48,718 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-01-13 22:59:57,097 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/middleware.py changed, reloading.
 2024-01-13 22:59:57,345 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:00:15,028 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:00:23,506 (WARNING) - django.request - Unauthorized: /api/nextmatches/
+2024-01-13 23:01:01,233 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
+2024-01-13 23:01:40,214 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
+2024-01-13 23:52:50,292 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:53:50,786 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-01-13 23:53:51,197 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:54:37,882 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
+2024-01-13 23:56:56,589 (WARNING) - django.request - Unauthorized: /api/lastmatches/
+2024-01-14 00:00:09,167 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/middleware.py changed, reloading.
+2024-01-14 00:00:09,601 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-14 00:00:15,520 (WARNING) - django.request - Method Not Allowed: /auth/jwt/refresh
