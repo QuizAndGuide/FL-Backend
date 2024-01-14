@@ -2264,3 +2264,1818 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000
 2024-01-13 22:59:48,718 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-01-13 22:59:57,097 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/middleware.py changed, reloading.
 2024-01-13 22:59:57,345 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:00:15,028 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:00:23,506 (WARNING) - django.request - Unauthorized: /api/nextmatches/
+2024-01-13 23:01:01,233 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
+2024-01-13 23:01:40,214 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
+2024-01-13 23:52:50,292 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:53:50,786 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-01-13 23:53:51,197 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-13 23:54:37,882 (WARNING) - django.request - Method Not Allowed: /auth/jwt/create
+2024-01-13 23:56:56,589 (WARNING) - django.request - Unauthorized: /api/lastmatches/
+2024-01-14 00:00:09,167 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/api/middleware.py changed, reloading.
+2024-01-14 00:00:09,601 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-01-14 00:00:15,520 (WARNING) - django.request - Method Not Allowed: /auth/jwt/refresh
+2024-02-07 23:07:29,275 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:29,496 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:07:29,496 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:29,504 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:07:29,505 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:29,512 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:07:29,513 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:29,522 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:07:30,071 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:30,095 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:07:39,174 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:39,192 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:07:39,193 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:39,209 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:07:41,072 (ERROR) - django.security.DisallowedHost - Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/http/request.py", line 152, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2024-02-07 23:07:41,104 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-07 23:14:58,013 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-02-07 23:18:08,999 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-02-07 23:18:09,395 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-02-07 23:23:14,680 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-02-07 23:23:15,079 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-02-07 23:33:47,522 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-02-07 23:35:32,203 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-02-07 23:35:49,863 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-02-07 23:35:50,228 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-02-07 23:40:23,162 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-02-07 23:40:23,576 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-02-07 23:42:50,165 (INFO) - django.utils.autoreload - /Users/ric/code/FL-Backend/football_quiz/settings.py changed, reloading.
+2024-02-07 23:42:50,550 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-02-08 00:24:37,955 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:37,962 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:37,967 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:37,971 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,083 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,095 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,114 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,128 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,369 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,398 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,417 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:38,425 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 00:24:41,067 (WARNING) - django.request - Bad Request: /auth/jwt/create
+2024-02-08 13:42:09,503 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 13:42:24,226 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:16:09,167 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:26:22,521 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:29,250 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:29,704 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:30,145 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:30,574 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:31,011 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:31,451 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:31,878 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:32,308 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:32,738 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:33,178 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:33,621 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:34,066 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:34,516 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:34,937 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:35,355 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:42,372 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:42,823 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:43,276 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:43,728 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:44,181 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:44,633 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:45,068 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:45,491 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:45,941 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:46,390 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:46,838 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:47,292 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:47,741 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:48,208 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:48,659 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:49,107 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:49,562 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:50,015 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:50,431 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:50,878 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:51,328 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:51,779 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:52,213 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:52,658 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:53,106 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:53,616 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:53,989 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:54,438 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:54,894 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:55,336 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:55,786 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:56,276 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:56,720 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:57,209 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:57,614 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:58,089 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:58,546 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:58,966 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:59,382 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:28:59,815 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:00,235 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:00,658 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:01,094 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:01,529 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:01,970 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:02,393 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:02,832 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:03,263 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:03,692 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:04,131 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:04,566 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:05,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:05,415 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:05,855 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:06,356 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:06,839 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:07,313 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:07,775 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:08,276 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:08,693 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:09,146 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:09,561 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:10,004 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:10,418 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:10,857 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:11,405 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:11,859 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:12,287 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:12,731 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:13,192 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:13,621 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:14,050 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:14,491 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:14,924 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:15,360 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:15,783 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:16,227 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:16,651 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:17,074 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:17,546 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:17,919 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:18,355 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:18,767 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:19,213 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:19,671 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:20,109 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:20,525 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:20,952 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:21,373 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:21,787 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:22,206 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:22,632 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:23,070 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:23,490 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:23,922 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:24,348 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:24,766 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:25,182 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:25,598 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:26,022 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:26,453 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:26,896 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:27,321 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:27,744 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:28,162 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:28,571 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:28,995 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:29,428 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:29,861 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:30,281 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:30,695 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:31,113 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:31,535 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:31,954 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:32,382 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:32,813 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:33,237 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:33,656 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:34,086 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:34,518 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:34,954 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:35,397 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:35,830 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:36,262 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:36,695 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:37,126 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:37,561 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:37,991 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:38,452 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:38,880 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:39,338 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:39,763 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:40,201 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:40,625 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:41,089 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:41,471 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:41,899 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:42,325 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:42,747 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:43,173 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:43,611 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:44,054 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:44,482 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:44,907 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:45,329 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:45,754 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:46,203 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:46,647 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:47,096 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:47,553 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:47,984 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:48,413 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:48,843 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:49,278 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:49,728 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:50,155 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:50,574 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:51,002 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:51,426 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:51,861 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:52,310 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:52,756 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:53,206 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:53,670 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:54,102 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:54,526 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:54,946 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:55,389 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:55,863 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:56,289 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:56,786 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:57,251 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:57,681 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:58,174 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:58,644 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:59,119 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:29:59,623 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:00,110 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:00,578 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:01,034 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:01,503 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:01,931 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:02,372 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:02,919 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:03,443 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:03,876 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:04,318 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:04,760 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:05,241 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:05,610 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:06,052 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:06,493 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:06,965 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:07,401 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:07,827 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:08,251 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:08,671 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:09,093 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:09,520 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:09,944 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:10,383 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:10,813 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:11,307 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:11,745 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:12,200 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:12,640 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:13,079 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:13,526 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:13,953 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:14,380 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:14,810 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:15,241 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:15,670 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:16,164 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:16,643 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:17,071 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:21,857 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:27,650 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:29,618 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:33,077 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:35,351 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:39,021 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:39,511 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:39,979 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:40,518 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:41,060 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:41,639 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:42,096 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:42,524 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:42,998 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:43,420 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:43,882 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:44,312 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:44,841 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:45,268 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:45,681 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:46,196 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:46,614 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:47,083 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:47,496 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:47,974 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:48,438 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:48,976 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:49,355 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:49,838 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:50,300 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:50,757 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:51,242 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:51,709 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:52,176 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:52,601 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:53,061 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:53,558 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:54,030 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:54,513 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:54,955 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:55,384 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:55,857 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:56,319 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:56,955 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:57,533 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:58,282 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:30:59,109 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:00,002 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:01,094 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:01,867 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:02,673 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:03,464 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:04,381 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:05,268 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:06,242 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:07,121 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:08,233 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:09,543 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:10,394 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:11,113 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:11,800 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:12,514 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:13,202 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:14,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:15,094 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:15,930 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:16,623 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:17,363 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:18,103 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:18,795 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:19,545 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:20,295 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:21,071 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:21,803 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:22,621 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:23,273 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:24,094 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:24,872 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:25,636 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:26,652 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:27,194 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:27,963 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:28,740 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:29,470 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:30,283 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:31,006 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:31,746 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:32,557 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:33,301 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:34,061 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:34,827 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:35,581 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:36,295 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:37,004 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:37,666 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:38,166 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:38,654 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:39,179 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:39,660 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:40,080 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:40,569 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:41,036 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:41,510 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:41,998 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:42,498 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:42,993 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:43,478 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:43,970 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:44,414 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:44,842 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:45,348 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:45,868 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:46,426 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:46,951 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:47,417 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:47,882 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:48,362 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:48,839 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:49,283 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:49,750 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:50,243 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:50,724 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:51,196 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:51,660 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:52,153 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:52,675 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:53,133 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:53,612 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:54,082 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:54,562 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:55,024 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:55,621 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:56,182 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:56,910 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:57,329 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:57,781 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:58,292 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:58,941 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:31:59,494 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:00,066 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:00,723 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:01,372 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:02,229 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:03,218 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:04,131 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:04,875 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:05,555 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:06,415 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:07,132 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:07,850 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:08,689 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:09,539 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:10,824 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:11,828 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:12,710 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:13,531 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:14,317 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:15,394 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:16,229 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:17,103 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:18,197 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:19,146 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:19,902 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:20,745 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:21,557 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:22,346 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:23,120 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:24,011 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:25,108 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:26,077 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:26,764 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:27,513 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:28,190 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:28,874 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:29,668 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:30,526 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:31,420 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:32,793 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:34,112 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:34,969 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:35,895 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:36,682 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:37,484 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:38,209 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:38,910 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:39,830 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:40,389 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:41,155 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:41,900 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:42,628 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:43,402 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:44,212 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:45,108 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:46,048 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:47,197 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:48,084 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:49,110 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:49,900 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:50,853 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:51,653 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:52,633 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:53,767 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:54,598 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:55,342 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:56,248 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:57,006 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:57,904 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:58,655 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:32:59,393 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:00,429 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:01,205 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:02,124 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:02,861 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:03,691 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:04,392 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:05,146 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:05,996 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:06,754 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:07,502 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:08,301 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:09,550 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:10,355 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:11,142 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:11,856 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:12,592 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:13,291 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:14,050 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:14,847 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:15,699 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:16,651 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:17,523 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:18,478 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:19,464 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:20,399 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:21,757 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:22,655 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:23,540 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:25,262 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:25,864 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:26,522 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:27,224 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:27,934 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:28,824 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:29,547 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:30,322 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:31,083 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:31,923 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:32,840 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:33,470 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:34,161 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:34,851 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:35,532 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:36,249 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:37,072 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:37,884 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:38,572 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:39,292 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:40,084 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:40,882 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:41,718 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:42,513 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:43,272 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:44,093 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:45,043 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:45,997 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:46,906 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:47,725 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:48,531 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:49,483 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:50,213 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:51,116 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:51,854 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:52,613 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:53,383 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:54,125 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:54,904 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:55,710 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:56,478 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:57,249 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:57,996 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:58,847 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:33:59,668 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:00,647 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:01,382 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:01,868 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:02,471 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:03,042 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:03,518 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:04,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:04,524 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:05,082 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:05,560 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:06,073 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:06,543 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:07,011 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:07,503 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:07,974 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:08,461 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:08,940 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:09,400 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:09,875 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:10,366 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:10,840 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:11,314 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:11,777 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:12,238 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:12,693 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:13,173 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:13,659 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:14,131 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:14,626 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:15,105 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:15,581 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:16,074 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:16,560 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:17,038 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:17,527 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:18,022 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:18,496 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:18,956 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:19,433 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:19,911 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:20,392 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:20,979 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:21,482 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:21,978 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:22,457 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:22,963 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:23,423 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:23,957 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:24,430 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:24,920 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:25,487 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:26,010 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:26,581 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:27,038 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:27,498 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:27,953 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:28,419 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:28,918 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:29,416 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:29,889 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:30,388 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:30,855 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:33,428 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:33,731 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:34,148 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:34,688 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:35,242 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:35,861 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:36,497 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:37,245 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:37,840 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:38,422 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:39,096 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:39,927 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:40,859 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:41,651 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:42,325 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:42,952 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:43,681 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:44,316 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:44,944 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:45,603 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:46,352 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:46,945 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:47,559 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:48,133 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:48,731 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:49,283 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:49,875 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:50,491 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:51,108 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:51,730 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:52,281 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:52,863 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:53,494 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:54,107 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:54,699 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:55,330 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:55,979 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:56,587 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:57,204 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:57,787 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:58,396 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:58,989 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:34:59,612 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:00,359 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:00,913 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:01,469 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:02,013 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:02,619 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:03,238 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:03,862 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:04,462 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:05,163 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:05,817 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:06,417 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:06,987 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:07,697 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:08,308 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:09,014 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:09,711 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:10,387 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:11,117 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:12,429 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:13,180 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:14,045 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:14,688 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:15,438 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:16,264 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:17,003 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:17,525 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:18,113 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:18,738 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:19,621 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:20,296 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:20,966 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:21,548 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:22,117 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:22,847 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:23,430 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:24,101 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:24,660 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:25,165 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:25,742 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:26,384 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:27,120 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:27,689 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:28,325 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:28,899 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:29,449 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:30,012 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:30,547 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:31,055 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:31,661 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:32,335 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:32,956 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:33,599 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:34,090 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:34,616 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:35,181 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:35,886 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:36,455 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:37,066 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:37,599 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:38,091 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:38,606 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:39,200 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:39,980 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:40,641 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:41,131 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:41,829 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:42,282 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:42,906 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:43,461 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:44,077 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:44,694 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:45,239 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:45,830 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:46,426 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:47,057 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:47,702 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:48,314 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:48,936 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:49,593 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:50,248 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:50,847 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:51,427 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:52,025 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:52,646 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:53,234 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:53,925 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:54,523 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:55,158 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:55,823 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:56,449 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:57,027 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:57,703 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:58,301 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:58,840 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:35:59,425 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:00,073 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:00,673 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:01,236 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:01,967 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:02,614 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:03,304 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:04,111 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:04,776 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:05,329 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:05,971 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:06,512 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:07,057 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:07,691 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:08,348 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:08,947 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:09,555 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:10,168 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:10,733 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:11,320 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:11,995 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:12,767 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:13,475 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:14,286 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:15,028 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:15,834 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:17,041 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:17,732 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:18,456 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:19,285 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:19,889 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:20,560 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:21,168 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:21,753 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:22,326 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:22,989 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:23,650 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:24,289 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:24,834 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:25,416 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:26,005 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:26,575 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:27,144 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:27,699 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:28,360 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:29,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:29,574 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:30,290 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:31,001 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:31,705 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:32,461 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:33,009 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:33,666 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:34,239 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:34,948 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:35,885 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:36,809 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:37,656 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:38,420 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:39,213 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:39,948 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:40,756 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:41,487 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:42,225 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:42,950 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:43,664 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:44,311 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:45,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:45,597 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:46,313 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:47,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:47,564 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:48,520 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:49,325 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:50,015 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:50,746 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:51,458 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:52,219 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:53,017 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:53,651 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:54,333 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:54,867 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:55,601 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:56,278 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:56,974 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:57,499 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:58,044 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:58,743 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:36:59,401 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:00,105 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:00,674 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:01,317 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:01,979 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:02,591 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:03,150 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:03,814 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:04,391 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:04,991 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:05,621 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:06,232 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:06,815 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:07,380 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:07,948 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:08,525 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:09,027 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:09,539 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:10,040 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:10,710 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:11,309 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:11,976 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:12,617 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:13,205 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:13,820 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:14,427 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:15,038 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:15,610 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:16,248 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:16,850 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:17,466 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:18,025 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:18,640 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:19,200 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:19,797 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:20,376 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:21,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:21,584 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:22,160 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:22,783 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:23,385 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:24,020 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:24,619 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:25,268 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:25,896 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:26,518 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:27,274 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:27,720 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:28,359 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:28,994 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:29,478 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:30,041 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:30,478 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:30,900 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:31,329 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:31,823 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:32,360 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:32,875 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:33,452 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:34,157 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:34,901 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:35,682 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:36,433 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:37,213 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:37,947 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:38,722 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:39,434 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:40,210 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:40,997 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:41,768 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:42,528 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:43,325 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:44,121 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:44,795 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:45,562 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:46,334 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:47,371 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:48,166 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:49,089 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:50,382 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:51,473 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:52,218 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:52,979 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:53,753 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:54,436 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:55,124 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:55,855 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:56,648 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:57,486 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:58,429 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:37:59,267 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:00,344 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:01,531 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:02,327 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:03,018 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:03,715 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:04,441 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:05,182 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:05,895 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:06,618 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:07,574 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:08,232 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:08,919 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:09,627 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:10,354 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:11,092 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:11,818 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:12,528 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:13,287 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:14,031 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:14,767 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:15,512 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:16,350 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:17,146 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:17,910 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:18,751 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:19,483 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:20,199 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:21,102 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:21,758 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:22,401 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:23,105 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:23,889 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:24,656 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:25,535 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:26,392 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:28,011 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:29,222 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:30,102 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:31,113 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:32,810 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:33,611 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:34,531 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:35,271 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:35,963 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:36,607 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:37,214 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:37,777 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:38,301 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:38,935 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:39,501 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:40,014 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:40,575 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:41,090 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:41,665 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:42,168 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:42,676 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:43,177 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:43,700 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:44,210 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:44,727 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:45,236 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:45,729 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:46,239 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:46,822 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:47,289 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:47,780 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:48,295 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:48,798 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:49,295 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:49,796 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:50,324 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:50,837 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:51,452 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:52,085 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:52,545 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:53,009 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:53,585 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:54,047 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:54,542 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:54,985 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:55,464 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:56,129 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:56,712 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:57,201 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:57,669 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:58,151 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:58,672 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:59,238 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:38:59,719 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:00,259 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:00,750 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:01,205 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:01,685 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:02,211 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:02,780 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:03,275 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:03,733 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:04,204 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:04,686 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:05,146 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:05,622 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:06,086 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:06,550 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:07,012 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:07,497 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:07,967 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:08,436 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:08,969 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:09,458 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:09,912 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:10,357 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:10,840 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:11,320 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:11,818 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:12,340 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:12,929 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:13,347 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:13,866 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:14,271 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:14,762 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:15,248 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:15,718 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:16,208 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:16,682 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:17,156 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:17,601 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:18,071 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:18,564 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:19,009 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:19,482 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:19,958 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:20,423 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:20,934 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:21,401 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:21,864 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:22,345 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:22,837 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:23,337 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:23,828 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:24,321 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:24,783 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:25,304 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:25,790 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:26,278 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:26,744 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:27,232 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:27,721 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:28,226 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:28,696 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:29,189 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:29,807 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:30,249 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:30,762 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:31,352 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:31,887 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:32,413 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:33,018 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:33,645 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:34,272 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:34,879 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:35,447 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:36,023 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:36,621 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:37,233 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:37,860 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:38,406 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:38,994 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:39,602 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:40,215 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:40,845 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:41,468 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:42,171 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:42,725 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:43,353 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:43,901 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:44,422 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:45,055 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:45,612 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:46,207 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:46,803 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:47,488 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:48,076 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:48,662 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:49,256 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:50,136 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:50,775 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:51,427 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:52,137 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:52,758 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:53,392 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:54,015 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:54,640 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:55,255 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:55,847 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:56,523 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:57,339 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:58,108 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:58,765 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:39:59,501 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:00,148 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:00,747 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:01,365 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:01,915 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:02,495 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:03,109 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:03,777 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:04,354 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:04,963 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:05,544 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:06,119 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:06,705 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:07,310 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:08,085 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:08,668 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:09,381 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:10,021 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:10,611 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:11,218 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:11,824 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:12,481 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:13,088 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:13,693 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:14,280 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:14,906 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:15,517 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:16,187 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:16,735 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:17,253 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:17,861 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:18,417 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:19,037 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:19,554 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:20,096 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:20,675 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:21,248 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:21,840 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:22,395 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:22,952 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:23,532 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:24,108 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:24,716 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:25,346 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:25,899 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:26,604 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:27,296 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:28,005 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:28,525 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:29,106 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:29,740 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:30,489 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:31,241 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:31,770 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:32,340 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:32,897 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:33,427 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:33,987 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:34,559 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:35,091 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:35,636 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:36,204 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:36,783 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:37,346 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:37,987 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:38,553 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:39,318 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:39,856 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:40,463 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:41,064 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:41,670 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:42,247 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:42,852 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:43,436 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:44,055 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:44,653 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:45,240 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:45,814 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:46,430 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:47,040 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:47,770 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:48,268 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:48,979 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:49,550 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:50,184 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:50,824 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:51,394 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:52,010 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:52,603 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:53,219 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:53,938 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:54,490 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:55,087 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:55,712 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:56,671 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:57,523 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:58,266 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:58,932 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:40:59,496 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:00,107 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:00,837 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:01,619 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:02,229 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:02,924 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:03,606 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:04,585 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:05,953 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:06,551 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:07,124 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:07,745 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:08,288 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:08,840 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:09,432 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:10,162 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:10,858 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:11,417 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:12,000 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:12,623 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:13,189 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:13,767 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:14,355 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:14,937 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:15,513 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:16,129 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:16,711 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:17,284 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:17,909 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:18,518 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:19,062 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:19,689 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:20,288 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:20,928 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:21,544 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:22,279 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:22,773 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:23,421 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:24,015 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:24,644 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:25,231 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:25,802 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:26,465 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:27,202 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:27,991 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:28,585 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:29,168 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:29,735 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:30,289 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:30,853 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:31,457 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:32,065 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:32,696 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:33,306 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:33,878 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:34,483 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:35,095 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:35,690 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:36,443 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:36,951 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:37,558 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:38,171 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:38,783 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:39,414 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:39,990 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:40,604 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:41,235 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:41,822 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:42,455 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:43,029 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:43,613 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:44,225 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:44,878 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:45,495 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:46,095 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:46,639 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:47,173 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:47,729 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:48,284 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:48,853 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:49,466 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:50,103 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:50,812 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:51,374 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:51,944 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:52,555 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:53,143 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:53,917 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:54,513 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:55,365 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:56,073 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:56,761 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:57,373 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:57,918 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:58,602 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:59,181 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:41:59,765 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:00,357 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:01,039 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:01,623 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:02,194 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:02,769 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:03,327 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:03,921 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:04,471 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:05,059 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:05,683 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:06,189 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:06,692 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:07,180 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:07,634 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:08,090 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:08,557 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:09,005 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:09,451 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:09,913 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:10,469 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:10,966 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:11,612 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:12,087 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:12,560 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:13,016 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:13,512 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:14,017 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:14,520 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:14,983 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:15,455 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:15,918 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:16,398 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:16,871 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:17,345 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:17,847 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:18,354 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:18,834 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:19,322 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:19,798 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:20,298 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:20,776 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:21,281 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:21,774 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:22,251 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:22,751 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:23,276 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:23,855 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:24,285 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:24,774 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:25,285 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:25,772 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:26,287 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:26,799 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:27,292 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:27,779 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:28,263 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:28,732 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:29,191 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:29,706 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:30,176 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:30,650 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:31,106 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:31,576 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:32,053 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:32,569 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:33,083 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:33,691 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:34,171 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:34,653 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:35,099 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:35,591 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:36,090 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:36,642 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:37,301 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:38,315 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:39,152 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:39,647 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:40,132 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:40,703 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:41,178 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:41,714 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:42,188 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:43,015 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:43,611 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:44,252 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:44,975 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:45,759 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:46,539 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:47,414 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:48,308 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:49,562 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:50,212 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:50,896 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:51,536 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:52,125 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:52,717 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:53,381 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:54,038 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:54,696 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:55,582 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:56,111 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:56,811 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:57,609 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:58,467 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:42:59,631 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:00,493 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:01,390 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:02,213 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:02,872 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:03,594 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:04,330 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:05,151 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:05,843 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:06,698 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:07,317 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:07,957 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:08,991 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:09,649 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:10,233 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:10,862 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:11,536 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:12,136 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:12,684 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:13,291 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:14,073 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:14,949 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:15,691 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:16,460 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:17,004 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:17,596 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:18,155 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:18,918 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:19,462 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:19,976 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:20,606 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:21,346 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:21,989 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:22,580 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:23,252 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:23,837 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:24,465 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:25,196 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:26,055 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:27,056 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:27,868 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:28,893 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:29,675 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:30,540 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:31,400 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:32,230 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:33,558 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:34,689 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:35,653 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:36,166 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:36,891 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:37,592 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:38,295 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:39,083 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:40,057 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:40,916 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:42,046 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:42,907 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:43,713 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:44,504 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:45,855 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:46,730 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:47,365 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:48,023 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:48,706 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:49,388 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:50,130 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:50,826 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:51,596 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:52,250 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:53,078 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:53,865 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:54,606 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:55,163 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:55,714 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:56,318 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:56,881 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:57,499 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:58,119 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:58,733 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:59,255 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:43:59,855 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:00,545 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:01,324 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:01,931 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:02,443 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:03,562 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:04,080 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:04,684 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:05,231 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:05,874 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:06,538 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:07,142 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:07,674 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:08,207 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:08,715 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:47,089 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:47,518 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:47,950 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:48,387 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:48,839 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:49,338 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:49,724 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:50,170 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:50,620 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:51,075 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:51,516 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:51,954 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:52,403 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:52,858 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:53,273 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:53,723 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:54,166 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:54,618 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:55,068 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:55,491 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:55,936 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:56,380 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:56,831 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:57,278 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:57,735 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:58,167 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:58,617 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:59,065 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:59,512 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:44:59,958 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:00,404 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:00,852 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:01,303 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:01,752 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:02,201 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:02,648 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:03,095 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:03,542 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:03,990 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:04,435 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:04,887 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:05,314 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:05,758 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:06,203 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:06,655 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:07,102 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:07,552 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:08,003 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:08,429 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:08,880 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:09,328 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:09,751 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:10,182 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:10,613 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:11,036 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:11,471 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:11,884 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:12,316 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:12,741 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:13,162 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:13,615 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:14,007 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:14,419 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:14,838 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:15,258 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:15,677 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:16,115 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:16,540 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:16,965 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:17,400 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:17,808 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:18,239 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:18,679 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:19,129 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:19,560 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:19,994 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:20,432 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:20,871 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:21,316 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:21,758 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:22,186 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:22,600 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:23,021 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:23,444 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:23,858 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:24,290 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:24,654 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:24,717 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:45:25,109 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:48:30,773 (WARNING) - django.request - Not Found: /aoi/stats
+2024-02-08 14:49:21,849 (WARNING) - django.request - Not Found: /api/stats
+2024-02-08 14:49:22,272 (WARNING) - django.request - Not Found: /api/stats
+2024-02-08 14:49:34,110 (WARNING) - django.request - Not Found: /api/stats
+2024-02-08 14:51:48,474 (ERROR) - django.request - Internal Server Error: /api/goalers
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/goalers/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-02-08 14:51:48,894 (ERROR) - django.request - Internal Server Error: /api/goalers
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/goalers/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-02-08 14:52:04,682 (ERROR) - django.request - Internal Server Error: /api/goalers
+Traceback (most recent call last):
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ric/.local/share/virtualenvs/FL-Backend-MMGzRk4z/lib/python3.11/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/goalers/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-02-08 14:53:27,341 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 14:53:27,805 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 14:53:36,157 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:03:44,485 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:03:46,013 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:03:55,315 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:07:56,541 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:07:56,989 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:08:05,848 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:18:52,187 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:20:06,387 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:20:06,779 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 15:20:21,966 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:25:48,728 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:25:50,270 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:27:14,164 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:28:49,560 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:28:50,035 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:29:05,484 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:29:05,951 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:30:53,762 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:32:18,867 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:32:19,430 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:32:31,144 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:38:41,812 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:38:43,280 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:38:53,708 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:42:09,458 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:43:32,052 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:43:32,552 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:43:42,750 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 16:44:09,654 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 17:21:50,328 (WARNING) - django.request - Unauthorized: /api/goalers/
+2024-02-08 17:23:48,286 (WARNING) - django.request - Unauthorized: /api/goalers/
